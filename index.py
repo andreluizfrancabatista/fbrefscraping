@@ -41,89 +41,69 @@ from tqdm import tqdm
 """# Iniciando a Raspagem de Dados"""
 
 # Com o WebDrive a gente consegue a pedir a página (URL)
-wd_Chrome.get("https://www.thegreyhoundrecorder.com.au/form-guides/") 
-# time.sleep(2)
+wd_Chrome.get("https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures") 
+time.sleep(2)
 # wd_Chrome.save_screenshot('screen.png')
-date = wd_Chrome.find_elements(By.CSS_SELECTOR, 'h2.meeting-list__title')
-dia_corrida = date[0].text
-print(dia_corrida)
-eventos = wd_Chrome.find_elements(By.CSS_SELECTOR, 'div.meeting-list')[0]
-fields = eventos.find_elements(By.CSS_SELECTOR, 'h3.meeting-row__title')
-links = eventos.find_elements(By.CSS_SELECTOR, 'div.meeting-row__links')
-links_list = []
-# Timezones
-aest_tz = pytz.timezone('Australia/Sydney')  # Sydney segue AEST
-brt_tz = pytz.timezone('America/Sao_Paulo')
-for link in links:
-    try:
-        url = link.find_element(By.CSS_SELECTOR, 'a.meetings__row-btn').get_attribute('href')
-        links_list.append(url)
-    except:
-        print('Erro ao pegar links dos fields')
-        pass
-# print(links_list, len(links_list))
 
+# data dict
 dados = {
-    'DATE' : [],
-    'TIME' : [],
-    'FIELD': [],
-    'RACE' : [],
-    'BOX'  : [],
-    'GREY' : [],
-    'RTG'  : []
+    'HOME':[],
+    'AWAY':[],
+    'FTHG':[],
+    'FTAG':[],
+    'DIFF':[]
 }
 
-# Para percorrer apenas uma parte da lista usar --> for link in links_list[:5]:
-for link in links_list:
-    wd_Chrome.get(link)
-    field = link.split("form-guides/")[1].split("/")[0]
-    date_ = wd_Chrome.find_element(By.CSS_SELECTOR, 'h1.form-guide-meeting__heading').text
-    date_ = date_.split('- ')[1]
-    date_ = pd.to_datetime(re.sub(r'(\d+)(st|nd|rd|th)', r'\1', date_), format="%d %b %Y")
-    races = wd_Chrome.find_elements(By.CSS_SELECTOR, 'div.form-guide-field-event')
-    box = 'box'
-    grey = 'grey'
-    rtg = 'rtg'
-    for race in races:
-        # field já tá salvo
-        # print(field)
-        # race_number
-        race_number = race.find_element(By.CSS_SELECTOR, 'h2.meeting-event__header-race').text
-        race_number = f"R{race_number.split(' ')[1]}"
-        # time --> FICOU ERRADO
-        time_ = race.find_element(By.CSS_SELECTOR, 'div.meeting-event__header-time').text
-        time_ = time_.split(' ')[0]
-        # Convertendo a string para datetime com o fuso AEST, usando a data de hoje
-        aest_time = aest_tz.localize(datetime.strptime(time_, "%I:%M%p"))
-        time_ = aest_time.strftime("%H:%M")
-        # get rows
-        rows = race.find_elements(By.CSS_SELECTOR, 'tr.form-guide-field-selection')
-        for row in rows:
-            # box_number
-            box_number = row.find_element(By.CSS_SELECTOR, 'img.form-guide-field-selection__rug')
-            box_number = box_number.get_attribute('alt').split(' ')[1]
-            # grey_name
-            grey_name = row.find_element(By.CSS_SELECTOR, 'span.form-guide-field-selection__name').text
-            # rtg 9th <td>
-            try:
-                rtg = row.find_element(By.CSS_SELECTOR, 'td:nth-child(9)').text
-            except:
-                rtg = ''
-                pass
-            dados['FIELD'].append(field)
-            dados['RACE'].append(race_number)
-            dados['DATE'].append(date_)
-            dados['TIME'].append(time_)
-            dados['BOX'].append(box_number)
-            dados['GREY'].append(grey_name)
-            dados['RTG'].append(rtg)
+next = {
+    'HOME':[],
+    'AWAY':[]
+}
 
-wd_Chrome.quit()
-# Salvar no CSV
+# Coleta de dados
+table = wd_Chrome.find_element(By.CSS_SELECTOR, 'table.stats_table')
+rows  = table.find_elements(By.CSS_SELECTOR, 'tr')
+for row in rows:
+    try:
+        home  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="home_team"]').text
+        away  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="away_team"]').text
+        score = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="score"]').text
+        if not score.strip():
+            if home:
+                # print(f'{home} x {away}')
+                next['HOME'].append(home)
+                next['AWAY'].append(away)
+        else:
+            fthg  = score.split('–')[0]
+            ftag  = score.split('–')[1]
+            diff  = int(fthg) - int(ftag)    
+            dados['HOME'].append(home)
+            dados['AWAY'].append(away)
+            dados['FTHG'].append(fthg)
+            dados['FTAG'].append(ftag)
+            dados['DIFF'].append(diff)
+            # print(f'{home} {fthg} x {ftag} {away}')
+    except Exception as error:
+        # print(f'Erro: {error}')
+        pass
+
+# Iterando pelas chaves e imprimindo o tamanho de cada lista
+# for key, value in dados.items():
+#     print(f'Tamanho de {key}: {len(value)}')
+# for key, value in next.items():
+#     print(f'Tamanho de {key}: {len(value)}')
+
+# # Salvar no CSV
 df = pd.DataFrame(dados)
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-df.sort_values(by=['TIME', 'FIELD', 'RACE', 'RTG'], ascending=[True, True, True, False], inplace=True)
-filename = f"lista_de_corridas/corridas_do_dia_{dia_corrida.split(', ')[1]}.csv"
+filename = f"colombia.csv"
+df.to_csv(filename, sep=";")
+
+# # Salvar no CSV
+df = pd.DataFrame(next)
+df.reset_index(inplace=True, drop=True)
+df.index = df.index.set_names(['Nº'])
+df = df.rename(index=lambda x: x + 1)
+filename = f"colombia_next_next.csv"
 df.to_csv(filename, sep=";")
