@@ -1,6 +1,15 @@
-Pegar os nomes dos fields
-Criar os links de cada field
-Acessar o link do field https://www.thegreyhoundrecorder.com.au/form-guides/{field}
-Acessar o link na tag td>a.form-guide-track__row-btn
-Pegar RaceNumber, Greyhound, Box, Rating, 
-Salvar no CSV
+requirements.txt
+pip install pipreqs
+>> pipreqs .
+pip install -r requirements.txt
+
+Criar o CSV com resultados anteriores com DIFF - OK
+Criar o CSV com jogos futuros (fixtures) - Ok mas pode limitar me 10 jogos futuros
+
+Rodar o chance de gol com os CSVs criados - OK
+
+
+TODO
+Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
+Adicionar data e hora do jogo
+

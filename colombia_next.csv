@@ -1,13 +1,11 @@
-HOME,AWAY
-Once Caldas,Llaneros
-CD América,Boyacá Chicó
-Pasto,AD Cali
-CA Bucaramanga,Nacional
-Envigado,Once Caldas
-Millonarios,Alianza
-Unión Magdalena,Santa Fe
-Independiente,Rionegro
-CD América,Fortaleza FC
-Llaneros,Pereira
-La Equidad,Junior
-Boyacá Chicó,Tolima
+HOME;AWAY
+Rionegro;CD América
+Envigado;Once Caldas
+Llaneros;Pereira
+La Equidad;Junior
+Boyacá Chicó;Tolima
+Alianza;Envigado
+Nacional;Unión Magdalena
+AD Cali;La Equidad
+Once Caldas;CD América
+Santa Fe;Pasto

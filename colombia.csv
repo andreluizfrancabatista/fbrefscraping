@@ -1,101 +1,109 @@
-Nº;HOME;AWAY;FTHG;FTAG;DIFF
-1;Boyacá Chicó;CA Bucaramanga;1;0;1
-2;CD América;Llaneros;4;3;1
-3;Santa Fe;Pereira;2;1;1
-4;Junior;AD Cali;0;0;0
-5;Nacional;Once Caldas;4;0;4
-6;Rionegro;La Equidad;1;1;0
-7;Alianza;Independiente;1;1;0
-8;Tolima;Pasto;2;0;2
-9;Fortaleza FC;Envigado;0;0;0
-10;Once Caldas;Fortaleza FC;2;1;1
-11;Pasto;Millonarios;0;1;-1
-12;Santa Fe;Tolima;0;0;0
-13;La Equidad;Nacional;0;1;-1
-14;AD Cali;Envigado;1;0;1
-15;Independiente;Boyacá Chicó;3;0;3
-16;Junior;Rionegro;2;2;0
-17;Pereira;Alianza;0;0;0
-18;CA Bucaramanga;CD América;0;4;-4
-19;Llaneros;Unión Magdalena;2;0;2
-20;Rionegro;Santa Fe;0;0;0
-21;Boyacá Chicó;Llaneros;2;2;0
-22;CD América;Pasto;1;1;0
-23;Unión Magdalena;Junior;0;0;0
-24;Tolima;Alianza;3;1;2
-25;Envigado;Independiente;0;1;-1
-26;Once Caldas;CA Bucaramanga;2;1;1
-27;Fortaleza FC;AD Cali;1;0;1
-28;Millonarios;La Equidad;2;1;1
-29;Nacional;Pereira;3;0;3
-30;Pasto;Boyacá Chicó;3;0;3
-31;Independiente;Unión Magdalena;1;1;0
-32;Llaneros;Millonarios;2;2;0
-33;La Equidad;Envigado;2;3;-1
-34;Junior;Once Caldas;2;0;2
-35;Santa Fe;Nacional;2;2;0
-36;Pereira;Tolima;0;0;0
-37;CD América;Santa Fe;2;0;2
-38;AD Cali;CA Bucaramanga;0;0;0
-39;Unión Magdalena;La Equidad;0;0;0
-40;Millonarios;Independiente;0;1;-1
-41;Envigado;Pasto;0;1;-1
-42;CA Bucaramanga;Alianza;0;0;0
-43;Llaneros;AD Cali;0;1;-1
-44;Fortaleza FC;Rionegro;2;1;1
-45;Boyacá Chicó;Junior;0;2;-2
-46;Unión Magdalena;Millonarios;1;3;-2
-47;Once Caldas;Pereira;3;1;2
-48;Rionegro;Once Caldas;0;1;-1
-49;La Equidad;Boyacá Chicó;0;1;-1
-50;Alianza;Nacional;3;2;1
-51;AD Cali;Millonarios;3;1;2
-52;Pereira;Fortaleza FC;2;0;2
-53;Tolima;CD América;0;0;0
-54;Junior;Envigado;1;2;-1
-55;Pasto;Unión Magdalena;2;1;1
-56;Envigado;Santa Fe;1;7;-6
-57;Independiente;Llaneros;3;0;3
-58;CA Bucaramanga;Junior;1;1;0
-59;Boyacá Chicó;Rionegro;1;1;0
-60;Once Caldas;Alianza;1;2;-1
-61;Millonarios;Tolima;2;0;2
-62;CD América;Pereira;2;0;2
-63;Unión Magdalena;AD Cali;2;2;0
-64;Llaneros;La Equidad;1;0;1
-65;Independiente;Pasto;1;0;1
-66;Fortaleza FC;Nacional;1;5;-4
-67;Pereira;Envigado;2;0;2
-68;Alianza;Unión Magdalena;1;0;1
-69;Pasto;Llaneros;1;0;1
-70;Rionegro;CA Bucaramanga;0;1;-1
-71;Santa Fe;Fortaleza FC;2;0;2
-72;Junior;Millonarios;2;1;1
-73;La Equidad;Independiente;0;0;0
-74;AD Cali;Boyacá Chicó;0;0;0
-75;Nacional;CD América;1;0;1
-76;Tolima;Once Caldas;2;0;2
-77;CA Bucaramanga;Pereira;0;1;-1
-78;Envigado;Nacional;0;0;0
-79;Fortaleza FC;Tolima;1;1;0
-80;CD América;Alianza;3;0;3
-81;Pasto;La Equidad;2;1;1
-82;Millonarios;Rionegro;1;0;1
-83;Unión Magdalena;Boyacá Chicó;1;1;0
-84;Independiente;AD Cali;0;0;0
-85;Once Caldas;Santa Fe;0;1;-1
-86;Llaneros;Junior;0;1;-1
-87;Santa Fe;CA Bucaramanga;1;1;0
-88;Nacional;Tolima;4;3;1
-89;Boyacá Chicó;Pasto;0;0;0
-90;La Equidad;Fortaleza FC;1;1;0
-91;Pereira;Once Caldas;1;1;0
-92;Alianza;CA Bucaramanga;1;2;-1
-93;Nacional;Independiente;1;1;0
-94;Santa Fe;Millonarios;3;2;1
-95;Tolima;Llaneros;1;0;1
-96;AD Cali;CD América;1;1;0
-97;Rionegro;Envigado;1;0;1
-98;Alianza;Fortaleza FC;0;0;0
-99;Junior;Unión Magdalena;2;1;1
-100;Millonarios;Santa Fe;2;0;2
+HOME;AWAY;FTHG;FTAG;DIFF
+Boyacá Chicó;CA Bucaramanga;1;0;1
+CD América;Llaneros;4;3;1
+Santa Fe;Pereira;2;1;1
+Junior;AD Cali;0;0;0
+Nacional;Once Caldas;4;0;4
+Rionegro;La Equidad;1;1;0
+Alianza;Independiente;1;1;0
+Tolima;Pasto;2;0;2
+Fortaleza FC;Envigado;0;0;0
+Once Caldas;Fortaleza FC;2;1;1
+Pasto;Millonarios;0;1;-1
+Santa Fe;Tolima;0;0;0
+La Equidad;Nacional;0;1;-1
+AD Cali;Envigado;1;0;1
+Independiente;Boyacá Chicó;3;0;3
+Junior;Rionegro;2;2;0
+Pereira;Alianza;0;0;0
+CA Bucaramanga;CD América;0;4;-4
+Llaneros;Unión Magdalena;2;0;2
+Rionegro;Santa Fe;0;0;0
+Boyacá Chicó;Llaneros;2;2;0
+CD América;Pasto;1;1;0
+Unión Magdalena;Junior;0;0;0
+Tolima;Alianza;3;1;2
+Envigado;Independiente;0;1;-1
+Once Caldas;CA Bucaramanga;2;1;1
+Fortaleza FC;AD Cali;1;0;1
+Millonarios;La Equidad;2;1;1
+Nacional;Pereira;3;0;3
+Pasto;Boyacá Chicó;3;0;3
+Independiente;Unión Magdalena;1;1;0
+Llaneros;Millonarios;2;2;0
+La Equidad;Envigado;2;3;-1
+Junior;Once Caldas;2;0;2
+Santa Fe;Nacional;2;2;0
+Pereira;Tolima;0;0;0
+CD América;Santa Fe;2;0;2
+AD Cali;CA Bucaramanga;0;0;0
+Unión Magdalena;La Equidad;0;0;0
+Millonarios;Independiente;0;1;-1
+Envigado;Pasto;0;1;-1
+CA Bucaramanga;Alianza;0;0;0
+Llaneros;AD Cali;0;1;-1
+Fortaleza FC;Rionegro;2;1;1
+Boyacá Chicó;Junior;0;2;-2
+Unión Magdalena;Millonarios;1;3;-2
+Once Caldas;Pereira;3;1;2
+Rionegro;Once Caldas;0;1;-1
+La Equidad;Boyacá Chicó;0;1;-1
+Alianza;Nacional;3;2;1
+AD Cali;Millonarios;3;1;2
+Pereira;Fortaleza FC;2;0;2
+Tolima;CD América;0;0;0
+Junior;Envigado;1;2;-1
+Pasto;Unión Magdalena;2;1;1
+Envigado;Santa Fe;1;7;-6
+Independiente;Llaneros;3;0;3
+CA Bucaramanga;Junior;1;1;0
+Boyacá Chicó;Rionegro;1;1;0
+Once Caldas;Alianza;1;2;-1
+Millonarios;Tolima;2;0;2
+CD América;Pereira;2;0;2
+Unión Magdalena;AD Cali;2;2;0
+Llaneros;La Equidad;1;0;1
+Independiente;Pasto;1;0;1
+Fortaleza FC;Nacional;1;5;-4
+Pereira;Envigado;2;0;2
+Alianza;Unión Magdalena;1;0;1
+Pasto;Llaneros;1;0;1
+Rionegro;CA Bucaramanga;0;1;-1
+Santa Fe;Fortaleza FC;2;0;2
+Junior;Millonarios;2;1;1
+La Equidad;Independiente;0;0;0
+AD Cali;Boyacá Chicó;0;0;0
+Nacional;CD América;1;0;1
+Tolima;Once Caldas;2;0;2
+CA Bucaramanga;Pereira;0;1;-1
+Envigado;Nacional;0;0;0
+Fortaleza FC;Tolima;1;1;0
+CD América;Alianza;3;0;3
+Pasto;La Equidad;2;1;1
+Millonarios;Rionegro;1;0;1
+Unión Magdalena;Boyacá Chicó;1;1;0
+Independiente;AD Cali;0;0;0
+Once Caldas;Santa Fe;0;1;-1
+Llaneros;Junior;0;1;-1
+Santa Fe;CA Bucaramanga;1;1;0
+Nacional;Tolima;4;3;1
+Boyacá Chicó;Pasto;0;0;0
+La Equidad;Fortaleza FC;1;1;0
+Pereira;Once Caldas;1;1;0
+Alianza;CA Bucaramanga;1;2;-1
+Nacional;Independiente;1;1;0
+Santa Fe;Millonarios;3;2;1
+Tolima;Llaneros;1;0;1
+AD Cali;CD América;1;1;0
+Rionegro;Envigado;1;0;1
+Alianza;Fortaleza FC;0;0;0
+Junior;Unión Magdalena;2;1;1
+Once Caldas;Llaneros;1;0;1
+Millonarios;Santa Fe;2;0;2
+CD América;Boyacá Chicó;3;0;3
+Pasto;AD Cali;1;1;0
+CA Bucaramanga;Nacional;2;0;2
+Millonarios;Alianza;2;0;2
+Unión Magdalena;Santa Fe;0;1;-1
+Independiente;Rionegro;0;0;0
+CD América;Fortaleza FC;1;0;1

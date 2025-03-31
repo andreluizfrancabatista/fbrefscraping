@@ -1,3 +1,7 @@
+"""# Importando as Bibliotecas"""
+import pandas as pd
+import time
+from tqdm import tqdm
 from datetime import datetime, timedelta
 import pytz
 import re
@@ -28,20 +32,20 @@ options.add_argument('--log-level=3')
 options.add_argument('--disable-gpu')
 options.add_argument('--enable-unsafe-swiftshader')
 
-
 # Criação do WebDriver do Chrome
 wd_Chrome = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-"""# Importando as Bibliotecas"""
-
-import pandas as pd
-import time
-from tqdm import tqdm
-
 """# Iniciando a Raspagem de Dados"""
 
+# Escolha da campeonato
+liga = {
+    "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures"
+}
+pais = 'colombia'
+link = liga.get(pais, 'https://fbref.com/en')
+
 # Com o WebDrive a gente consegue a pedir a página (URL)
-wd_Chrome.get("https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures") 
+wd_Chrome.get(link) 
 time.sleep(2)
 # wd_Chrome.save_screenshot('screen.png')
 
@@ -97,13 +101,17 @@ df = pd.DataFrame(dados)
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-filename = f"colombia.csv"
-df.to_csv(filename, sep=";")
+filename = f"{pais}.csv"
+df.to_csv(filename, sep=";", index=False)
 
 # # Salvar no CSV
-df = pd.DataFrame(next)
+# Seleciona as 10 primeiras entradas de cada lista usando fatiamento
+home_subset = next['HOME'][:10]
+away_subset = next['AWAY'][:10]
+df = pd.DataFrame({'HOME': home_subset, 'AWAY': away_subset})
+#df = pd.DataFrame(next) #todos os jogos
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-filename = f"colombia_next_next.csv"
-df.to_csv(filename, sep=";")
+filename = f"{pais}_next.csv"
+df.to_csv(filename, sep=";", index=False)
