@@ -13,12 +13,12 @@ import pandas as pd
 # O arquivo CSV deve estar no seguinte formato
 # HOME;AWAY;FTHG;FTAG;DIFF
 # Caminho para o arquivo CSV
-file_path = 'colombia.csv'
+file_path = 'data/colombia.csv'
 
 # Caminho para o novo arquivo CSV
 # O arquivo CSV deve estar no seguinte formato
 # HOME;AWAY
-new_file_path = 'colombia_next.csv'
+new_file_path = 'data/colombia_next.csv'
 
 pd.set_option("display.precision", 2)
 

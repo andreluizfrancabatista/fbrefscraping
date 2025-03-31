@@ -101,7 +101,7 @@ df = pd.DataFrame(dados)
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-filename = f"{pais}.csv"
+filename = f"data/{pais}.csv"
 df.to_csv(filename, sep=";", index=False)
 
 # # Salvar no CSV
@@ -113,5 +113,5 @@ df = pd.DataFrame({'HOME': home_subset, 'AWAY': away_subset})
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-filename = f"{pais}_next.csv"
+filename = f"data/{pais}_next.csv"
 df.to_csv(filename, sep=";", index=False)
