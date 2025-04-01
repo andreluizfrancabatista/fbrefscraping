@@ -9,16 +9,26 @@ Original file is located at
 
 import numpy as np
 import pandas as pd
+import sys
+import os
 
-# O arquivo CSV deve estar no seguinte formato
-# HOME;AWAY;FTHG;FTAG;DIFF
-# Caminho para o arquivo CSV
-file_path = 'data/colombia.csv'
+if len(sys.argv) > 1:
+    pais = sys.argv[1]
+    file_path = f'data/{pais}.csv'
+    new_file_path = f'data/{pais}_next.csv'
+    if not os.path.exists(file_path):
+        print(f'Arquivo {file_path} não encontrado.')
+        sys.exit()
+    elif not os.path.exists(new_file_path):
+        print(f'Arquivo {new_file_path} não encontrado.')
+        sys.exit()
+    else:
+        print(f'Arquivo {file_path} encontrado. ')
+        print(f'Arquivo {new_file_path} encontrado. ')
+else:
+    print(f'Nenhum país foi fornecido.')
+    sys.exit()
 
-# Caminho para o novo arquivo CSV
-# O arquivo CSV deve estar no seguinte formato
-# HOME;AWAY
-new_file_path = 'data/colombia_next.csv'
 
 pd.set_option("display.precision", 2)
 

@@ -18,6 +18,24 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+
+# Escolha da campeonato
+ligas = {
+    "chile" : "https://fbref.com/en/comps/35/schedule/Chilean-Primera-Division-Scores-and-Fixtures",
+    "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures",
+    "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures"
+}
+
+if len(sys.argv) > 1:
+    pais = sys.argv[1]
+    if pais in ligas:
+        print(f'{pais} encontrado.')
+    else:
+        print(f'{pais} não encontrado.')
+        sys.exit()
+# pais = 'chile'
+link = ligas.get(pais, 'https://fbref.com/en')
+
 # Instanciando o Objeto ChromeOptions
 options = webdriver.ChromeOptions()
 
@@ -36,13 +54,6 @@ options.add_argument('--enable-unsafe-swiftshader')
 wd_Chrome = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 """# Iniciando a Raspagem de Dados"""
-
-# Escolha da campeonato
-liga = {
-    "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures"
-}
-pais = 'colombia'
-link = liga.get(pais, 'https://fbref.com/en')
 
 # Com o WebDrive a gente consegue a pedir a página (URL)
 wd_Chrome.get(link) 
@@ -103,6 +114,9 @@ for row in rows:
 
 # # Salvar no CSV
 df = pd.DataFrame(dados)
+# Convertendo a coluna 'DATE' para datetime e formatando para 'dd/mm/yyyy'
+df['DATE'] = pd.to_datetime(df['DATE'], format='%Y%m%d')
+df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
@@ -115,6 +129,9 @@ date_subset = next['DATE'][:10]
 home_subset = next['HOME'][:10]
 away_subset = next['AWAY'][:10]
 df = pd.DataFrame({'DATE': date_subset, 'HOME': home_subset, 'AWAY': away_subset})
+# Convertendo a coluna 'DATE' para datetime e formatando para 'dd/mm/yyyy'
+df['DATE'] = pd.to_datetime(df['DATE'], format='%Y%m%d')
+df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
 #df = pd.DataFrame(next) #todos os jogos
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])

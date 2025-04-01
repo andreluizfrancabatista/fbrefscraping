@@ -1,16 +1,14 @@
 requirements.txt
 pip install pipreqs
->> pipreqs .
+>> pipreqs . --force
+>> pipreqs --force .
 pip install -r requirements.txt
 
 Criar o CSV com resultados anteriores com DIFF - OK
 Criar o CSV com jogos futuros (fixtures) - Ok mas pode limitar me 10 jogos futuros
-
 Rodar o chance de gol com os CSVs criados - OK
 
 
-TODO
-Arrumar as datas do formato yyyymmdd para datetime (dd/mm/yyyy)
-Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
-Adicionar data e hora do jogo
 
+TODO
+Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
