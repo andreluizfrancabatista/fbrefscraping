@@ -12,3 +12,8 @@ Rodar o chance de gol com os CSVs criados - OK
 
 TODO
 Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
+Backtesting
+1) Escolhe uma data.
+2) Faz o chancedegol para os jogos antes dessa data.
+3) Não precisa rodar o chancedegol toda vez. Pode rodar por data e salvar em um CSV novo.
+4) DATE;TEAM;SCORE (o score de cada team em cada date)

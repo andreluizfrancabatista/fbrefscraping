@@ -90,7 +90,7 @@ solution_sorted = {k: v for k, v in sorted(solution.items(), key=lambda item: it
 # Exibir a solução em ordem alfabética
 for var, value in solution.items():
     print(f"{var} = {value:.2f}")
-
+print()
 # Exibir a solução ordenada por força/ranking
 for var, value in solution_sorted.items():
     print(f"{var} = {value:.2f}")
