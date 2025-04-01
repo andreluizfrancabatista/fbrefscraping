@@ -10,6 +10,7 @@ Rodar o chance de gol com os CSVs criados - OK
 
 
 TODO
+Arrumar as datas do formato yyyymmdd para datetime (dd/mm/yyyy)
 Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
 Adicionar data e hora do jogo
 

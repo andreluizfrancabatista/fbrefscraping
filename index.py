@@ -51,6 +51,7 @@ time.sleep(2)
 
 # data dict
 dados = {
+    'DATE':[],
     'HOME':[],
     'AWAY':[],
     'FTHG':[],
@@ -59,6 +60,7 @@ dados = {
 }
 
 next = {
+    'DATE':[],
     'HOME':[],
     'AWAY':[]
 }
@@ -68,18 +70,21 @@ table = wd_Chrome.find_element(By.CSS_SELECTOR, 'table.stats_table')
 rows  = table.find_elements(By.CSS_SELECTOR, 'tr')
 for row in rows:
     try:
+        date  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="date"]').get_attribute('csk')
         home  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="home_team"]').text
         away  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="away_team"]').text
         score = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="score"]').text
         if not score.strip():
             if home:
                 # print(f'{home} x {away}')
+                next['DATE'].append(date)
                 next['HOME'].append(home)
                 next['AWAY'].append(away)
         else:
             fthg  = score.split('–')[0]
             ftag  = score.split('–')[1]
-            diff  = int(fthg) - int(ftag)    
+            diff  = int(fthg) - int(ftag) 
+            dados['DATE'].append(date)   
             dados['HOME'].append(home)
             dados['AWAY'].append(away)
             dados['FTHG'].append(fthg)
@@ -106,9 +111,10 @@ df.to_csv(filename, sep=";", index=False)
 
 # # Salvar no CSV
 # Seleciona as 10 primeiras entradas de cada lista usando fatiamento
+date_subset = next['DATE'][:10]
 home_subset = next['HOME'][:10]
 away_subset = next['AWAY'][:10]
-df = pd.DataFrame({'HOME': home_subset, 'AWAY': away_subset})
+df = pd.DataFrame({'DATE': date_subset, 'HOME': home_subset, 'AWAY': away_subset})
 #df = pd.DataFrame(next) #todos os jogos
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
