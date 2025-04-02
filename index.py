@@ -23,7 +23,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 ligas = {
     "chile" : "https://fbref.com/en/comps/35/schedule/Chilean-Primera-Division-Scores-and-Fixtures",
     "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures",
-    "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures"
+    "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures",
+    "inglaterra" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures"
 }
 
 if len(sys.argv) > 1:
@@ -62,6 +63,7 @@ time.sleep(2)
 
 # data dict
 dados = {
+    'WEEK':[],
     'DATE':[],
     'HOME':[],
     'AWAY':[],
@@ -71,6 +73,7 @@ dados = {
 }
 
 next = {
+    'WEEK':[],
     'DATE':[],
     'HOME':[],
     'AWAY':[]
@@ -81,6 +84,7 @@ table = wd_Chrome.find_element(By.CSS_SELECTOR, 'table.stats_table')
 rows  = table.find_elements(By.CSS_SELECTOR, 'tr')
 for row in rows:
     try:
+        week  = row.find_element(By.CSS_SELECTOR, 'th[ data-stat="gameweek"]').text
         date  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="date"]').get_attribute('csk')
         home  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="home_team"]').text
         away  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="away_team"]').text
@@ -88,13 +92,15 @@ for row in rows:
         if not score.strip():
             if home:
                 # print(f'{home} x {away}')
+                next['WEEK'].append(week)
                 next['DATE'].append(date)
                 next['HOME'].append(home)
                 next['AWAY'].append(away)
         else:
             fthg  = score.split('–')[0]
             ftag  = score.split('–')[1]
-            diff  = int(fthg) - int(ftag) 
+            diff  = int(fthg) - int(ftag)
+            dados['WEEK'].append(week)
             dados['DATE'].append(date)   
             dados['HOME'].append(home)
             dados['AWAY'].append(away)
@@ -125,10 +131,11 @@ df.to_csv(filename, sep=";", index=False)
 
 # # Salvar no CSV
 # Seleciona as 10 primeiras entradas de cada lista usando fatiamento
+week_subset = next['WEEK'][:10]
 date_subset = next['DATE'][:10]
 home_subset = next['HOME'][:10]
 away_subset = next['AWAY'][:10]
-df = pd.DataFrame({'DATE': date_subset, 'HOME': home_subset, 'AWAY': away_subset})
+df = pd.DataFrame({'WEEK': week_subset, 'DATE': date_subset, 'HOME': home_subset, 'AWAY': away_subset})
 # Convertendo a coluna 'DATE' para datetime e formatando para 'dd/mm/yyyy'
 df['DATE'] = pd.to_datetime(df['DATE'], format='%Y%m%d')
 df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
