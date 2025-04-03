@@ -1,7 +1,4 @@
 WEEK;DATE;HOME;AWAY
-30;01/04/2025;Arsenal;Fulham
-30;01/04/2025;Wolves;West Ham
-30;01/04/2025;Nott'ham Forest;Manchester Utd
 30;02/04/2025;Newcastle Utd;Brentford
 30;02/04/2025;Manchester City;Leicester City
 30;02/04/2025;Southampton;Crystal Palace
@@ -9,3 +6,6 @@ WEEK;DATE;HOME;AWAY
 30;02/04/2025;Brighton;Aston Villa
 30;02/04/2025;Liverpool;Everton
 30;03/04/2025;Chelsea;Tottenham
+31;05/04/2025;Everton;Arsenal
+31;05/04/2025;Ipswich Town;Wolves
+31;05/04/2025;West Ham;Bournemouth

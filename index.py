@@ -24,7 +24,11 @@ ligas = {
     "chile" : "https://fbref.com/en/comps/35/schedule/Chilean-Primera-Division-Scores-and-Fixtures",
     "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures",
     "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures",
-    "inglaterra" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures"
+    "inglaterra" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
+    "italia" : "https://fbref.com/en/comps/11/schedule/Serie-A-Scores-and-Fixtures",
+    "espanha" : "https://fbref.com/en/comps/12/schedule/La-Liga-Scores-and-Fixtures",
+    "alemanha" : "https://fbref.com/en/comps/20/schedule/Bundesliga-Scores-and-Fixtures",
+    "frança" : "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures"
 }
 
 if len(sys.argv) > 1:
@@ -33,7 +37,7 @@ if len(sys.argv) > 1:
         print(f'{pais} encontrado.')
     else:
         print(f'{pais} não encontrado.')
-        sys.exit()
+        sys.exit(1)
 # pais = 'chile'
 link = ligas.get(pais, 'https://fbref.com/en')
 

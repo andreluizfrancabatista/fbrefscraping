@@ -4,16 +4,17 @@ pip install pipreqs
 >> pipreqs --force .
 pip install -r requirements.txt
 
-Criar o CSV com resultados anteriores com DIFF - OK
-Criar o CSV com jogos futuros (fixtures) - Ok mas pode limitar me 10 jogos futuros
-Rodar o chance de gol com os CSVs criados - OK
-
-
 
 TODO
-Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
-Backtesting
-1) Escolhe uma data.
-2) Faz o chancedegol para os jogos antes dessa data.
-3) Não precisa rodar o chancedegol toda vez. Pode rodar por data e salvar em um CSV novo.
-4) DATE;TEAM;SCORE (o score de cada team em cada date)
+* Adicionar mais países -  Entrar em https://fbref.com/en/comps/ e olhar a tabela domestic leagues 1st tier e 2nd tier
+
+* Explicação do que faz cada código:
+code_1.py - executa uma sequencia de três scripts para cada pais de uma lista:
+    index.py - faz o webscraping do pais e liga solicitados e salva em dois arquivos (pais.csv e pais_next.csv)
+    scores_semanais.py - cria o df de scores semanais (pais_scores.csv) a partir do arquivo pais.csv
+    backtesting.py - cria o df de jogos anteriores com os scores de cada semana (pais_final.csv) e calcula a porcentagem de acertos usando os arquivos pais.csv e pais_scores.csv
+
+Tá tudo funcionando bem.
+- Fazer para outras temporadas
+- Fazer para as segundas divisões de cada países
+- Fazer para ligas europeias menores (Holanda, Bélgica, Portugal, Austria, Escócia, Turquia, etc)

@@ -44,7 +44,6 @@ def build_system_from_csv(file_path):
     # Coletar todas as variáveis (times)
     variables = set(home_teams).union(set(away_teams))
     variables = sorted(variables)
-
     num_vars = len(variables)
     var_index = {var: idx for idx, var in enumerate(variables)}
 
@@ -56,7 +55,6 @@ def build_system_from_csv(file_path):
         home_team = home_teams[i]
         away_team = away_teams[i]
         diff = diffs[i]
-
         A[i, var_index[home_team]] = 1
         A[i, var_index[away_team]] = -1
         b[i] = diff
