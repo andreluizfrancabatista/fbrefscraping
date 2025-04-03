@@ -2,7 +2,7 @@ import sys
 import os
 import subprocess
 
-paises = ['inglaterra', 'italia', 'espanha', 'alemanha', 'frança']
+paises = ['inglaterra-1', 'inglaterra-2', 'italia-1', 'italia-2', 'espanha-1', 'espanha-2', 'alemanha-1', 'alemanha-2', 'frança-1', 'frança-2']
 
 arquivo = "data/backtesting_resultados.csv"
 
@@ -15,13 +15,13 @@ else:
 
 for pais in paises:
     # Executa index.py
-    # subprocess.run(["python", "index.py", pais], check=True)
-    pass
+    subprocess.run(["python", "index.py", pais], check=True)
+    # pass
 
 for pais in paises:
     # Executa scores_semanais.py
-    # subprocess.run(["python", "scores_semanais.py", pais], check=True)
-    pass
+    subprocess.run(["python", "scores_semanais.py", pais], check=True)
+    # pass
 
 for pais in paises:
     # Executa backtesting.py

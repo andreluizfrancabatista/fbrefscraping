@@ -1,0 +1,364 @@
+WEEK;DATE;HOME;AWAY;FTHG;FTAG;DIFF
+1;15/08/2024;Granada;Albacete;1;2;-1
+1;16/08/2024;CD Mirandés;Córdoba;1;0;1
+1;16/08/2024;Cádiz;Zaragoza;0;4;-4
+1;17/08/2024;Eibar;Castellón;1;0;1
+1;17/08/2024;Racing Ferrol;Málaga;2;2;0
+1;17/08/2024;La Coruña;Oviedo;0;1;-1
+1;18/08/2024;Racing Sant;Almería;2;2;0
+1;18/08/2024;Sporting Gijón;Levante;1;2;-1
+1;18/08/2024;Elche;Huesca;0;1;-1
+1;18/08/2024;Burgos;Cartagena;3;1;2
+1;19/08/2024;Eldense;Tenerife;2;1;1
+2;23/08/2024;Racing Sant;Eibar;2;2;0
+2;23/08/2024;Huesca;La Coruña;2;1;1
+2;24/08/2024;Sporting Gijón;Eldense;0;0;0
+2;24/08/2024;Racing Ferrol;Granada;0;1;-1
+2;24/08/2024;Levante;Cádiz;1;1;0
+2;24/08/2024;Tenerife;Almería;0;1;-1
+2;24/08/2024;Málaga;CD Mirandés;1;1;0
+2;25/08/2024;Albacete;Elche;1;0;1
+2;25/08/2024;Castellón;Oviedo;0;0;0
+2;26/08/2024;Cartagena;Zaragoza;1;2;-1
+2;26/08/2024;Córdoba;Burgos;2;2;0
+3;30/08/2024;Granada;Huesca;1;3;-2
+3;30/08/2024;Oviedo;Racing Sant;1;3;-2
+3;31/08/2024;Cádiz;Tenerife;2;2;0
+3;31/08/2024;Almería;Sporting Gijón;1;1;0
+3;31/08/2024;Málaga;Albacete;2;1;1
+3;01/09/2024;La Coruña;Racing Ferrol;1;0;1
+3;01/09/2024;Burgos;Castellón;0;2;-2
+3;01/09/2024;Eldense;Cartagena;1;2;-1
+3;01/09/2024;CD Mirandés;Zaragoza;0;0;0
+3;02/09/2024;Eibar;Levante;2;2;0
+3;02/09/2024;Elche;Córdoba;3;1;2
+4;06/09/2024;Tenerife;Racing Sant;0;1;-1
+4;07/09/2024;Granada;La Coruña;1;1;0
+4;07/09/2024;Sporting Gijón;Oviedo;3;1;2
+4;07/09/2024;Huesca;Burgos;0;1;-1
+4;07/09/2024;Córdoba;Málaga;0;0;0
+4;08/09/2024;Racing Ferrol;CD Mirandés;0;0;0
+4;08/09/2024;Cartagena;Levante;0;1;-1
+4;08/09/2024;Zaragoza;Elche;3;0;3
+4;08/09/2024;Eldense;Almería;1;0;1
+4;09/09/2024;Castellón;Cádiz;1;3;-2
+4;09/09/2024;Albacete;Eibar;0;1;-1
+5;13/09/2024;Córdoba;La Coruña;2;0;2
+5;14/09/2024;Levante;Eldense;3;1;2
+5;14/09/2024;Eibar;Tenerife;1;0;1
+5;14/09/2024;Málaga;Huesca;1;0;1
+5;14/09/2024;Racing Sant;Sporting Gijón;1;0;1
+5;15/09/2024;CD Mirandés;Albacete;2;0;2
+5;15/09/2024;Oviedo;Cartagena;1;0;1
+5;15/09/2024;Cádiz;Racing Ferrol;0;0;0
+5;15/09/2024;Burgos;Zaragoza;1;0;1
+5;15/09/2024;Elche;Granada;2;2;0
+5;16/09/2024;Almería;Castellón;2;5;-3
+6;20/09/2024;Granada;Málaga;2;2;0
+6;21/09/2024;Racing Ferrol;Albacete;1;4;-3
+6;21/09/2024;La Coruña;Burgos;0;2;-2
+6;21/09/2024;Eldense;Oviedo;1;1;0
+6;21/09/2024;Zaragoza;Levante;2;1;1
+6;22/09/2024;Tenerife;Sporting Gijón;1;1;0
+6;22/09/2024;Cartagena;Cádiz;1;2;-1
+6;22/09/2024;Castellón;Racing Sant;0;1;-1
+6;22/09/2024;Elche;CD Mirandés;1;0;1
+6;22/09/2024;Almería;Eibar;2;2;0
+6;23/09/2024;Huesca;Córdoba;4;1;3
+7;27/09/2024;Albacete;La Coruña;2;5;-3
+7;28/09/2024;CD Mirandés;Huesca;1;0;1
+7;28/09/2024;Cádiz;Eldense;1;2;-1
+7;28/09/2024;Sporting Gijón;Zaragoza;1;0;1
+7;28/09/2024;Málaga;Elche;0;3;-3
+7;29/09/2024;Levante;Almería;4;2;2
+7;29/09/2024;Castellón;Tenerife;2;1;1
+7;29/09/2024;Burgos;Granada;2;2;0
+7;29/09/2024;Córdoba;Racing Ferrol;3;1;2
+7;29/09/2024;Oviedo;Eibar;1;0;1
+7;30/09/2024;Racing Sant;Cartagena;1;2;-1
+8;04/10/2024;Huesca;Cádiz;3;1;2
+8;05/10/2024;Racing Ferrol;Elche;1;0;1
+8;05/10/2024;Eibar;Sporting Gijón;1;3;-2
+8;05/10/2024;CD Mirandés;Granada;0;1;-1
+8;05/10/2024;Almería;Burgos;2;0;2
+8;05/10/2024;Zaragoza;Racing Sant;2;3;-1
+8;05/10/2024;Tenerife;Cartagena;2;0;2
+8;06/10/2024;La Coruña;Málaga;0;0;0
+8;06/10/2024;Eldense;Castellón;2;3;-1
+8;06/10/2024;Levante;Oviedo;0;0;0
+8;06/10/2024;Albacete;Córdoba;1;1;0
+9;11/10/2024;Tenerife;Zaragoza;2;3;-1
+9;12/10/2024;Cartagena;Racing Ferrol;0;1;-1
+9;12/10/2024;Eibar;Eldense;1;0;1
+9;12/10/2024;Cádiz;Málaga;2;2;0
+9;13/10/2024;Huesca;Albacete;2;2;0
+9;13/10/2024;Oviedo;Almería;3;2;1
+9;13/10/2024;Racing Sant;Levante;1;0;1
+9;13/10/2024;Burgos;CD Mirandés;0;1;-1
+9;13/10/2024;Granada;Córdoba;1;0;1
+9;13/10/2024;Elche;La Coruña;0;0;0
+9;14/10/2024;Sporting Gijón;Castellón;2;1;1
+10;18/10/2024;Córdoba;Cartagena;2;1;1
+10;19/10/2024;La Coruña;Eldense;1;1;0
+10;19/10/2024;Málaga;Oviedo;0;0;0
+10;19/10/2024;Castellón;Levante;2;0;2
+10;19/10/2024;Granada;Tenerife;4;0;4
+10;19/10/2024;CD Mirandés;Eibar;1;0;1
+10;20/10/2024;Cádiz;Racing Sant;0;1;-1
+10;20/10/2024;Racing Ferrol;Huesca;0;0;0
+10;20/10/2024;Zaragoza;Almería;1;2;-1
+10;20/10/2024;Elche;Sporting Gijón;2;1;1
+10;21/10/2024;Albacete;Burgos;2;0;2
+11;22/10/2024;Oviedo;CD Mirandés;4;1;3
+11;22/10/2024;Castellón;Granada;2;3;-1
+11;23/10/2024;Eldense;Zaragoza;2;3;-1
+11;23/10/2024;Eibar;Cádiz;1;0;1
+11;23/10/2024;Cartagena;Elche;0;0;0
+11;23/10/2024;Racing Sant;Córdoba;2;0;2
+11;24/10/2024;Almería;Albacete;3;1;2
+11;24/10/2024;Levante;La Coruña;2;1;1
+11;24/10/2024;Tenerife;Málaga;0;0;0
+11;24/10/2024;Sporting Gijón;Huesca;2;1;1
+11;24/10/2024;Burgos;Racing Ferrol;1;1;0
+12;26/10/2024;CD Mirandés;Cartagena;3;1;2
+12;26/10/2024;Cádiz;Oviedo;2;0;2
+12;26/10/2024;Zaragoza;Castellón;1;2;-1
+12;26/10/2024;Córdoba;Eldense;2;0;2
+12;27/10/2024;Málaga;Eibar;1;0;1
+12;27/10/2024;La Coruña;Racing Sant;1;2;-1
+12;27/10/2024;Elche;Burgos;1;0;1
+12;27/10/2024;Albacete;Sporting Gijón;3;3;0
+12;27/10/2024;Huesca;Almería;2;2;0
+12;27/10/2024;Granada;Levante;1;2;-1
+12;28/10/2024;Racing Ferrol;Tenerife;1;1;0
+13;02/11/2024;Eibar;Elche;0;2;-2
+13;02/11/2024;Sporting Gijón;Cádiz;2;0;2
+13;02/11/2024;Cartagena;La Coruña;1;5;-4
+13;02/11/2024;Racing Sant;Albacete;1;1;0
+13;02/11/2024;Zaragoza;Granada;2;1;1
+13;03/11/2024;Oviedo;Burgos;3;1;2
+13;03/11/2024;Tenerife;CD Mirandés;1;0;1
+14;08/11/2024;Elche;Almería;1;2;-1
+14;09/11/2024;CD Mirandés;Cádiz;2;2;0
+14;09/11/2024;Granada;Eldense;3;2;1
+14;09/11/2024;Huesca;Zaragoza;1;1;0
+14;09/11/2024;Málaga;Cartagena;1;0;1
+14;10/11/2024;Córdoba;Castellón;2;2;0
+14;10/11/2024;Burgos;Sporting Gijón;0;2;-2
+14;10/11/2024;Racing Ferrol;Racing Sant;1;2;-1
+14;10/11/2024;Albacete;Oviedo;2;2;0
+14;11/11/2024;La Coruña;Eibar;1;0;1
+15;16/11/2024;Eibar;Racing Ferrol;2;0;2
+15;16/11/2024;Castellón;CD Mirandés;1;3;-2
+15;16/11/2024;Eldense;Albacete;2;0;2
+15;16/11/2024;Levante;Elche;1;1;0
+15;16/11/2024;Racing Sant;Burgos;2;0;2
+15;16/11/2024;Sporting Gijón;Granada;1;2;-1
+15;17/11/2024;Cádiz;Córdoba;2;0;2
+15;17/11/2024;Oviedo;Tenerife;3;1;2
+15;17/11/2024;Cartagena;Huesca;1;0;1
+15;17/11/2024;Almería;La Coruña;2;1;1
+15;17/11/2024;Zaragoza;Málaga;0;0;0
+13;20/11/2024;Eldense;Huesca;2;1;1
+16;22/11/2024;Racing Ferrol;Levante;0;0;0
+16;23/11/2024;Cartagena;Almería;1;2;-1
+16;23/11/2024;Granada;Cádiz;0;0;0
+16;23/11/2024;Burgos;Eibar;1;0;1
+16;23/11/2024;Córdoba;Zaragoza;2;2;0
+16;23/11/2024;Málaga;Racing Sant;0;0;0
+16;24/11/2024;Albacete;Tenerife;2;1;1
+16;24/11/2024;CD Mirandés;Eldense;1;0;1
+16;24/11/2024;La Coruña;Sporting Gijón;1;1;0
+16;24/11/2024;Huesca;Castellón;1;1;0
+16;24/11/2024;Elche;Oviedo;4;0;4
+13;26/11/2024;Almería;Córdoba;4;0;4
+13;27/11/2024;Levante;Málaga;4;2;2
+13;27/11/2024;Castellón;Racing Ferrol;0;0;0
+17;29/11/2024;Oviedo;Huesca;0;3;-3
+17;30/11/2024;Zaragoza;Albacete;0;1;-1
+17;30/11/2024;Almería;Granada;2;1;1
+17;30/11/2024;Cádiz;La Coruña;2;4;-2
+17;30/11/2024;Racing Sant;CD Mirandés;0;1;-1
+17;30/11/2024;Tenerife;Elche;1;1;0
+17;01/12/2024;Castellón;Málaga;2;0;2
+17;01/12/2024;Eldense;Racing Ferrol;0;0;0
+17;01/12/2024;Levante;Burgos;3;1;2
+17;01/12/2024;Sporting Gijón;Córdoba;2;0;2
+17;02/12/2024;Eibar;Cartagena;1;0;1
+18;06/12/2024;CD Mirandés;Levante;2;1;1
+18;07/12/2024;Elche;Cádiz;2;1;1
+18;07/12/2024;Granada;Racing Sant;3;0;3
+18;07/12/2024;La Coruña;Zaragoza;1;1;0
+18;07/12/2024;Huesca;Eibar;2;1;1
+18;08/12/2024;Racing Ferrol;Oviedo;1;5;-4
+18;08/12/2024;Málaga;Almería;1;1;0
+18;08/12/2024;Albacete;Castellón;0;0;0
+18;08/12/2024;Burgos;Eldense;1;0;1
+18;08/12/2024;Córdoba;Tenerife;3;0;3
+18;09/12/2024;Cartagena;Sporting Gijón;1;0;1
+19;13/12/2024;Almería;CD Mirandés;1;0;1
+19;14/12/2024;Levante;Córdoba;2;2;0
+19;14/12/2024;Castellón;Cartagena;4;1;3
+19;14/12/2024;Cádiz;Albacete;1;0;1
+19;14/12/2024;Eldense;Elche;0;0;0
+19;14/12/2024;Eibar;Zaragoza;2;1;1
+19;14/12/2024;Oviedo;Granada;2;0;2
+19;15/12/2024;Sporting Gijón;Racing Ferrol;1;3;-2
+19;15/12/2024;Burgos;Málaga;0;0;0
+19;15/12/2024;Racing Sant;Huesca;0;1;-1
+20;17/12/2024;Granada;Cartagena;4;1;3
+20;17/12/2024;Albacete;Levante;0;0;0
+20;17/12/2024;Zaragoza;Oviedo;2;3;-1
+20;17/12/2024;Córdoba;Eibar;2;1;1
+20;18/12/2024;Racing Ferrol;Almería;1;4;-3
+20;18/12/2024;CD Mirandés;Sporting Gijón;1;1;0
+20;18/12/2024;Málaga;Eldense;3;0;3
+20;19/12/2024;Cádiz;Burgos;1;1;0
+20;19/12/2024;Elche;Racing Sant;3;0;3
+20;19/12/2024;La Coruña;Castellón;5;1;4
+20;19/12/2024;Huesca;Tenerife;1;0;1
+21;20/12/2024;Cartagena;Albacete;0;0;0
+21;21/12/2024;Eibar;Granada;1;1;0
+21;21/12/2024;Oviedo;Córdoba;2;3;-1
+21;21/12/2024;Zaragoza;Racing Ferrol;1;0;1
+21;21/12/2024;Sporting Gijón;Málaga;1;3;-2
+21;22/12/2024;Burgos;Tenerife;1;0;1
+21;22/12/2024;Castellón;Elche;0;2;-2
+21;22/12/2024;Racing Sant;Eldense;2;2;0
+21;22/12/2024;Almería;Cádiz;1;1;0
+21;22/12/2024;La Coruña;CD Mirandés;0;4;-4
+21;22/12/2024;Levante;Huesca;1;1;0
+14;07/01/2025;Tenerife;Levante;0;3;-3
+22;10/01/2025;Granada;Burgos;0;0;0
+22;11/01/2025;Racing Ferrol;Cartagena;0;0;0
+22;11/01/2025;Huesca;CD Mirandés;1;0;1
+22;11/01/2025;Albacete;Racing Sant;2;2;0
+22;11/01/2025;Tenerife;Castellón;2;0;2
+22;11/01/2025;Málaga;La Coruña;1;1;0
+22;11/01/2025;Oviedo;Sporting Gijón;1;1;0
+22;12/01/2025;Córdoba;Almería;0;3;-3
+22;12/01/2025;Cádiz;Levante;0;0;0
+22;12/01/2025;Elche;Zaragoza;1;0;1
+22;13/01/2025;Eldense;Eibar;1;3;-2
+23;17/01/2025;Cartagena;Oviedo;0;1;-1
+23;18/01/2025;Eldense;Cádiz;1;4;-3
+23;18/01/2025;Sporting Gijón;Elche;1;1;0
+23;18/01/2025;Eibar;Albacete;1;1;0
+23;18/01/2025;Levante;Granada;3;1;2
+23;19/01/2025;Burgos;La Coruña;0;1;-1
+23;19/01/2025;Racing Sant;Racing Ferrol;6;0;6
+23;19/01/2025;Zaragoza;Tenerife;2;2;0
+23;19/01/2025;Castellón;Córdoba;1;2;-1
+23;19/01/2025;Almería;Huesca;0;0;0
+23;20/01/2025;CD Mirandés;Málaga;3;2;1
+24;24/01/2025;Elche;Eibar;2;0;2
+24;25/01/2025;Córdoba;Racing Sant;1;2;-1
+24;25/01/2025;La Coruña;Levante;1;2;-1
+24;25/01/2025;Huesca;Cartagena;4;0;4
+24;25/01/2025;Tenerife;Eldense;0;1;-1
+24;26/01/2025;Granada;Sporting Gijón;3;1;2
+24;26/01/2025;Albacete;Almería;2;1;1
+24;26/01/2025;Oviedo;Castellón;1;0;1
+24;26/01/2025;Málaga;Zaragoza;1;2;-1
+24;27/01/2025;Cádiz;CD Mirandés;3;1;2
+19;29/01/2025;Tenerife;La Coruña;0;0;0
+25;31/01/2025;Eldense;Granada;0;3;-3
+25;01/02/2025;CD Mirandés;Elche;3;0;3
+25;01/02/2025;Sporting Gijón;Burgos;2;0;2
+25;01/02/2025;Almería;Oviedo;1;1;0
+25;01/02/2025;Racing Sant;Málaga;2;1;1
+25;02/02/2025;Castellón;Huesca;0;1;-1
+25;02/02/2025;Eibar;La Coruña;0;1;-1
+25;02/02/2025;Zaragoza;Cádiz;0;0;0
+25;02/02/2025;Cartagena;Córdoba;0;1;-1
+25;02/02/2025;Tenerife;Albacete;3;1;2
+25;03/02/2025;Levante;Racing Ferrol;0;1;-1
+26;07/02/2025;Albacete;Zaragoza;2;1;1
+26;08/02/2025;Racing Ferrol;Castellón;1;3;-2
+26;08/02/2025;Granada;CD Mirandés;0;0;0
+26;08/02/2025;Sporting Gijón;Eibar;0;0;0
+26;08/02/2025;Málaga;Levante;1;1;0
+26;09/02/2025;Elche;Tenerife;2;0;2
+26;09/02/2025;Córdoba;Huesca;1;2;-1
+26;09/02/2025;Burgos;Racing Sant;2;1;1
+26;09/02/2025;Cádiz;Cartagena;5;2;3
+26;09/02/2025;La Coruña;Almería;3;1;2
+26;10/02/2025;Oviedo;Eldense;0;0;0
+27;14/02/2025;CD Mirandés;Racing Ferrol;4;1;3
+27;15/02/2025;Castellón;Eibar;2;0;2
+27;15/02/2025;Cartagena;Málaga;0;1;-1
+27;15/02/2025;Racing Sant;Cádiz;2;3;-1
+27;15/02/2025;Tenerife;Córdoba;2;3;-1
+27;16/02/2025;Levante;Sporting Gijón;0;0;0
+27;16/02/2025;Huesca;Granada;1;1;0
+27;16/02/2025;Eldense;La Coruña;2;0;2
+27;16/02/2025;Zaragoza;Burgos;0;1;-1
+27;16/02/2025;Oviedo;Albacete;1;0;1
+27;17/02/2025;Almería;Elche;1;1;0
+28;21/02/2025;Málaga;Tenerife;1;0;1
+28;22/02/2025;Racing Ferrol;Córdoba;0;1;-1
+28;22/02/2025;Eibar;Racing Sant;2;2;0
+28;22/02/2025;Burgos;Oviedo;1;2;-1
+28;22/02/2025;Granada;Zaragoza;2;2;0
+28;22/02/2025;Sporting Gijón;Almería;1;1;0
+28;23/02/2025;La Coruña;Huesca;0;0;0
+28;23/02/2025;Elche;Cartagena;2;1;1
+28;23/02/2025;Levante;CD Mirandés;1;0;1
+28;23/02/2025;Albacete;Eldense;0;1;-1
+28;23/02/2025;Cádiz;Castellón;0;0;0
+29;28/02/2025;Cartagena;Eibar;0;2;-2
+29;01/03/2025;Castellón;Burgos;2;1;1
+29;01/03/2025;Huesca;Racing Ferrol;3;1;2
+29;01/03/2025;Zaragoza;Sporting Gijón;1;1;0
+29;01/03/2025;Almería;Málaga;2;2;0
+29;02/03/2025;Córdoba;Granada;5;0;5
+29;02/03/2025;Oviedo;La Coruña;1;2;-1
+29;02/03/2025;Albacete;Cádiz;3;0;3
+29;02/03/2025;Eldense;Levante;1;2;-1
+29;02/03/2025;Racing Sant;Elche;2;0;2
+29;03/03/2025;CD Mirandés;Tenerife;2;0;2
+24;05/03/2025;Racing Ferrol;Burgos;0;1;-1
+30;07/03/2025;Eibar;Almería;1;0;1
+30;07/03/2025;La Coruña;Córdoba;1;1;0
+30;08/03/2025;CD Mirandés;Oviedo;1;0;1
+30;08/03/2025;Elche;Castellón;3;1;2
+30;08/03/2025;Sporting Gijón;Racing Sant;1;1;0
+30;08/03/2025;Zaragoza;Eldense;2;4;-2
+30;09/03/2025;Tenerife;Huesca;2;0;2
+30;09/03/2025;Málaga;Cádiz;0;2;-2
+30;09/03/2025;Levante;Cartagena;3;0;3
+30;09/03/2025;Granada;Racing Ferrol;3;0;3
+30;10/03/2025;Burgos;Albacete;1;0;1
+31;14/03/2025;Oviedo;Elche;1;1;0
+31;15/03/2025;Racing Ferrol;Eibar;0;0;0
+31;15/03/2025;Albacete;Málaga;2;0;2
+31;15/03/2025;Cartagena;Burgos;0;1;-1
+31;15/03/2025;Almería;Zaragoza;4;1;3
+31;15/03/2025;Córdoba;Sporting Gijón;1;1;0
+31;16/03/2025;Eldense;CD Mirandés;2;2;0
+31;16/03/2025;Racing Sant;Tenerife;2;1;1
+31;16/03/2025;Huesca;Levante;1;2;-1
+31;16/03/2025;Cádiz;Granada;1;0;1
+31;17/03/2025;Castellón;La Coruña;2;2;0
+32;21/03/2025;Burgos;Almería;3;1;2
+32;22/03/2025;Elche;Eldense;2;0;2
+32;22/03/2025;Málaga;Racing Ferrol;2;0;2
+32;22/03/2025;CD Mirandés;Racing Sant;2;1;1
+32;22/03/2025;Granada;Oviedo;1;0;1
+32;23/03/2025;Levante;Castellón;3;2;1
+32;23/03/2025;Eibar;Huesca;2;1;1
+32;23/03/2025;Sporting Gijón;Albacete;0;2;-2
+32;23/03/2025;Tenerife;Cádiz;2;1;1
+32;23/03/2025;La Coruña;Cartagena;2;2;0
+32;24/03/2025;Zaragoza;Córdoba;1;1;0
+33;28/03/2025;Tenerife;Granada;2;1;1
+33;29/03/2025;Eldense;Burgos;0;0;0
+33;29/03/2025;Racing Ferrol;La Coruña;0;1;-1
+33;29/03/2025;Racing Sant;Zaragoza;2;0;2
+33;29/03/2025;Cartagena;Castellón;2;2;0
+33;29/03/2025;Almería;Levante;1;0;1
+33;30/03/2025;Córdoba;Elche;1;2;-1
+33;30/03/2025;Oviedo;Málaga;2;1;1
+33;30/03/2025;Albacete;CD Mirandés;3;2;1
+33;30/03/2025;Huesca;Sporting Gijón;3;2;1
+33;31/03/2025;Cádiz;Eibar;0;0;0

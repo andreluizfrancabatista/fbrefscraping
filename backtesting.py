@@ -11,11 +11,16 @@ if len(sys.argv) > 1:
     pais = sys.argv[1]
 
 leagues = {
-    "inglaterra" : "Premier League",
-    "italia" : "Serie A",
-    "espanha" : "La Liga",
-    "alemanha" : "Bundesliga",
-    "frança" : "Ligue One"
+    "inglaterra-1" : "Premier League",
+    "inglaterra-2" : "EFL Championship",
+    "italia-1" : "Serie A",
+    "italia-2" : "Serie B",
+    "espanha-1" : "La Liga",
+    "espanha-2" : "La Liga 2",
+    "alemanha-1" : "Bundesliga",
+    "alemanha-2" : "2. Bundesliga",
+    "frança-1" : "Ligue 1",
+    "frança-2" : "Ligue 2"
 }
 league = leagues.get(pais, 'sem liga')
 
@@ -108,4 +113,4 @@ else:
     df_resultado.to_csv(output_file, sep=';', index=False, decimal=',')  # Cria o arquivo com cabeçalho
 
 # print(f"Dados de {pais} adicionados ao CSV consolidado.")
-print(f'{pais:<11} {league:<15} H: {round(porcentagem_acertos_h*100, 2):<5}%. A: {round(porcentagem_acertos_a*100, 2):<5}%. Total: {round(porcentagem_acertos_total*100, 2):<5}%')
+print(f'{pais:<13} {league:<17} H: {round(porcentagem_acertos_h*100, 2):<5}%. A: {round(porcentagem_acertos_a*100, 2):<5}%. Total: {round(porcentagem_acertos_total*100, 2):<5}%')
