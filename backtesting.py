@@ -14,7 +14,7 @@ leagues = {
     "inglaterra" : "Premier League",
     "italia" : "Serie A",
     "espanha" : "La Liga",
-    "alemanha" : "Bundelisga",
+    "alemanha" : "Bundesliga",
     "frança" : "Ligue One"
 }
 league = leagues.get(pais, 'sem liga')

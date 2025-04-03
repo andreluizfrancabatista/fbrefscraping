@@ -18,3 +18,61 @@ Tá tudo funcionando bem.
 - Fazer para outras temporadas
 - Fazer para as segundas divisões de cada países
 - Fazer para ligas europeias menores (Holanda, Bélgica, Portugal, Austria, Escócia, Turquia, etc)
+
+- no backtesting.py
+trocar
+
+leagues = {
+    "inglaterra" : "Premier League",
+    "italia" : "Serie A",
+    "espanha" : "La Liga",
+    "alemanha" : "Bundesliga",
+    "frança" : "Ligue One"
+}
+
+por
+
+leagues = {
+    "inglaterra-1" : "Premier League",
+    "inglaterra-2" : "EFL Championship",
+    "italia-1" : "Serie A",
+    "italia-2" : "Serie B",
+    "espanha-1" : "La Liga",
+    "espanha-2" : "La Liga 2",
+    "alemanha-1" : "Bundesliga",
+    "alemanha-2" : "2. Bundesliga",
+    "frança-1" : "Ligue One",
+    "frança-2" : "Ligue Two"
+
+}
+
+
+* No index.py
+trocar
+# Escolha da campeonato
+ligas = {
+    "chile" : "https://fbref.com/en/comps/35/schedule/Chilean-Primera-Division-Scores-and-Fixtures",
+    "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures",
+    "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures",
+    "inglaterra" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
+    "italia" : "https://fbref.com/en/comps/11/schedule/Serie-A-Scores-and-Fixtures",
+    "espanha" : "https://fbref.com/en/comps/12/schedule/La-Liga-Scores-and-Fixtures",
+    "alemanha" : "https://fbref.com/en/comps/20/schedule/Bundesliga-Scores-and-Fixtures",
+    "frança" : "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures"
+}
+
+por
+
+# Escolha da campeonato
+ligas = {
+    "chile" : "https://fbref.com/en/comps/35/schedule/Chilean-Primera-Division-Scores-and-Fixtures",
+    "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures",
+    "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures",
+    "inglaterra-1" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
+    "inglaterra-2" : "link da EFL Championship",
+    "italia-1" : "https://fbref.com/en/comps/11/schedule/Serie-A-Scores-and-Fixtures",
+    "italia-2" : "link da serie B",
+    "espanha-1" : "https://fbref.com/en/comps/12/schedule/La-Liga-Scores-and-Fixtures",
+    "alemanha-1" : "https://fbref.com/en/comps/20/schedule/Bundesliga-Scores-and-Fixtures",
+    "frança-1" : "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures"
+}
