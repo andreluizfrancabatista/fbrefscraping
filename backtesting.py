@@ -9,24 +9,12 @@ pd.options.display.float_format = '{:.2f}'.format
 
 if len(sys.argv) > 1:
     pais = sys.argv[1]
-
-leagues = {
-    "inglaterra-1" : "Premier League",
-    "inglaterra-2" : "EFL Championship",
-    "italia-1" : "Serie A",
-    "italia-2" : "Serie B",
-    "espanha-1" : "La Liga",
-    "espanha-2" : "La Liga 2",
-    "alemanha-1" : "Bundesliga",
-    "alemanha-2" : "2. Bundesliga",
-    "frança-1" : "Ligue 1",
-    "frança-2" : "Ligue 2"
-}
-league = leagues.get(pais, 'sem liga')
+    liga = sys.argv[2]
+    link = sys.argv[3]
 
 # Carregar os CSVs
-df_matches = pd.read_csv(f'data/{pais}.csv', sep=';')
-df_scores = pd.read_csv(f'data/{pais}_scores.csv', sep=';', index_col=0)
+df_matches = pd.read_csv(f'data/{pais}-{liga}.csv', sep=';')
+df_scores = pd.read_csv(f'data/{pais}-{liga}_scores.csv', sep=';', index_col=0)
 
 # Garantir que as colunas de week no df_scores sejam strings no formato correto (ex: 'WEEK2', 'WEEK3'...)
 df_scores.columns = [f'WEEK{int(col.replace("WEEK", ""))}' for col in df_scores.columns]
@@ -62,14 +50,14 @@ df_matches['FTR'] = df_matches.apply(lambda row: 'H' if row['FTHG'] > row['FTAG'
 df_matches['COUNTRY'] = pais
 
 # Criar a coluna league
-df_matches['LEAGUE'] = league
+df_matches['LEAGUE'] = liga
 
 # Reorganizar colunas
 colunas = ['COUNTRY', 'LEAGUE', 'WEEK', 'DATE', 'HOME', 'AWAY', 'FTHG', 'FTAG', 'FTR', 'HOME_SCORE', 'AWAY_SCORE', 'DIFF_SCORE', 'DIFF_FTR']
 df_matches = df_matches[colunas]
 
 # Salvar o resultado final
-df_matches.to_csv(f'data/{pais}_final.csv', sep=';', index=False)
+df_matches.to_csv(f'data/{pais}-{liga}_final.csv', sep=';', index=False)
 # print(df_matches.tail(10))
 
 
@@ -94,7 +82,7 @@ pais = pais.capitalize()
 
 # Criar DataFrame com os resultados
 df_resultado = pd.DataFrame([[  
-    pais, league, total_jogos, total_diff_ftr_h, total_diff_ftr_a,  
+    pais, liga, total_jogos, total_diff_ftr_h, total_diff_ftr_a,  
     total_diff_ftr_h_ftr_hd, total_diff_ftr_a_ftr_ad,  
     round(porcentagem_acertos_h, 2), round(porcentagem_acertos_a, 2), round(porcentagem_acertos_total, 2)  
 ]], columns=[  
@@ -113,4 +101,4 @@ else:
     df_resultado.to_csv(output_file, sep=';', index=False, decimal=',')  # Cria o arquivo com cabeçalho
 
 # print(f"Dados de {pais} adicionados ao CSV consolidado.")
-print(f'{pais:<13} {league:<17} H: {round(porcentagem_acertos_h*100, 2):<5}%. A: {round(porcentagem_acertos_a*100, 2):<5}%. Total: {round(porcentagem_acertos_total*100, 2):<5}%')
+print(f'{pais:<13} {liga:<17} H: {round(porcentagem_acertos_h*100, 2):<5}%. A: {round(porcentagem_acertos_a*100, 2):<5}%. Total: {round(porcentagem_acertos_total*100, 2):<5}%')

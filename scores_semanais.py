@@ -43,10 +43,9 @@ def compute_weekly_scores(file_path):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         pais = sys.argv[1]
-    file_path = f'data/{pais}.csv'
+        liga = sys.argv[2]
+        link = sys.argv[3]
+    file_path = f'data/{pais}-{liga}.csv'
     df_weekly_scores = compute_weekly_scores(file_path)
-    df_weekly_scores.to_csv(f'data/{pais}_scores.csv', sep=';', index=True)
-    #  print(df_weekly_scores.iloc[:, -3:]) # Imprime as três últimas weeks para conferência
-    # Para abrir esse CSV em outro script
-    # df = pd.read_csv('inglaterra_scores.csv', sep=';',index_col=0)
+    df_weekly_scores.to_csv(f'data/{pais}-{liga}_scores.csv', sep=';', index=True)
 

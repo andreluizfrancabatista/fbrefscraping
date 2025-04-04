@@ -2,7 +2,36 @@ import sys
 import os
 import subprocess
 
-paises = ['inglaterra-1', 'inglaterra-2', 'italia-1', 'italia-2', 'espanha-1', 'espanha-2', 'alemanha-1', 'alemanha-2', 'frança-1', 'frança-2']
+dataset = {
+    "inglaterra" : {
+        "Premier League" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
+        "EFL Championship" : "https://fbref.com/en/comps/10/schedule/Championship-Scores-and-Fixtures"
+    },
+    "espanha" : {
+        "La Liga" : "https://fbref.com/en/comps/12/schedule/La-Liga-Scores-and-Fixtures",
+        "La Liga 2" : "https://fbref.com/en/comps/17/schedule/Segunda-Division-Scores-and-Fixtures"
+    },
+    "italia" : {
+        "Serie A" : "https://fbref.com/en/comps/11/schedule/Serie-A-Scores-and-Fixtures",
+        "Serie B" : "https://fbref.com/en/comps/18/schedule/Serie-B-Scores-and-Fixtures"
+    },
+    "alemanha" : {
+        "Bundesliga" : "https://fbref.com/en/comps/20/schedule/Bundesliga-Scores-and-Fixtures",
+        "2. Bundesliga" : "https://fbref.com/en/comps/33/schedule/2-Bundesliga-Scores-and-Fixtures"
+    },
+    "frança" : {
+        "Ligue 1" : "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures",
+        "Ligue 2" : "https://fbref.com/en/comps/60/schedule/Ligue-2-Scores-and-Fixtures"
+    }
+}
+
+scripts = ["index.py", "scores_semanais.py", "backtesting.py"]
+
+for script in scripts:
+  for pais, obj in dataset.items():
+    for liga, link in obj.items():
+      subprocess.run(["python", script, pais, liga, link], check=True)
+
 
 arquivo = "data/backtesting_resultados.csv"
 
@@ -12,17 +41,3 @@ if os.path.exists(arquivo):
     print(f"{arquivo} deletado com sucesso!")
 else:
     print(f"{arquivo} não encontrado.")
-
-for pais in paises:
-    # Executa index.py
-    subprocess.run(["python", "index.py", pais], check=True)
-    # pass
-
-for pais in paises:
-    # Executa scores_semanais.py
-    subprocess.run(["python", "scores_semanais.py", pais], check=True)
-    # pass
-
-for pais in paises:
-    # Executa backtesting.py
-    subprocess.run(["python", "backtesting.py", pais], check=True)

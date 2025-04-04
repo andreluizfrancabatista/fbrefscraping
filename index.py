@@ -18,33 +18,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-
-# Escolha da campeonato
-ligas = {
-    "chile" : "https://fbref.com/en/comps/35/schedule/Chilean-Primera-Division-Scores-and-Fixtures",
-    "colombia" : "https://fbref.com/en/comps/41/schedule/Primera-A-Scores-and-Fixtures",
-    "dinamarca" : "https://fbref.com/en/comps/50/schedule/Danish-Superliga-Scores-and-Fixtures",
-    "inglaterra-1" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
-    "inglaterra-2" : "https://fbref.com/en/comps/10/schedule/Championship-Scores-and-Fixtures",
-    "italia-1" : "https://fbref.com/en/comps/11/schedule/Serie-A-Scores-and-Fixtures",
-    "italia-2" : "https://fbref.com/en/comps/18/schedule/Serie-B-Scores-and-Fixtures",
-    "espanha-1" : "https://fbref.com/en/comps/12/schedule/La-Liga-Scores-and-Fixtures",
-    "espanha-2" : "https://fbref.com/en/comps/17/schedule/Segunda-Division-Scores-and-Fixtures",
-    "alemanha-1" : "https://fbref.com/en/comps/20/schedule/Bundesliga-Scores-and-Fixtures",
-    "alemanha-2" : "https://fbref.com/en/comps/33/schedule/2-Bundesliga-Scores-and-Fixtures",
-    "frança-1" : "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures",
-    "frança-2" : "https://fbref.com/en/comps/60/schedule/Ligue-2-Scores-and-Fixtures"
-}
-
+# Recebe os argumentos via linha de comando
 if len(sys.argv) > 1:
     pais = sys.argv[1]
-    if pais in ligas:
-        print(f'{pais} encontrado.')
-    else:
-        print(f'{pais} não encontrado.')
-        sys.exit(1)
-# pais = 'chile'
-link = ligas.get(pais, 'https://fbref.com/en')
+    liga = sys.argv[2]
+    link = sys.argv[3]
 
 # Instanciando o Objeto ChromeOptions
 options = webdriver.ChromeOptions()
@@ -121,12 +99,6 @@ for row in rows:
         # print(f'Erro: {error}')
         pass
 
-# Iterando pelas chaves e imprimindo o tamanho de cada lista
-# for key, value in dados.items():
-#     print(f'Tamanho de {key}: {len(value)}')
-# for key, value in next.items():
-#     print(f'Tamanho de {key}: {len(value)}')
-
 # # Salvar no CSV
 df = pd.DataFrame(dados)
 # Convertendo a coluna 'DATE' para datetime e formatando para 'dd/mm/yyyy'
@@ -135,7 +107,7 @@ df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-filename = f"data/{pais}.csv"
+filename = f"data/{pais}-{liga}.csv"
 df.to_csv(filename, sep=";", index=False)
 
 # # Salvar no CSV
@@ -152,5 +124,5 @@ df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
 df.reset_index(inplace=True, drop=True)
 df.index = df.index.set_names(['Nº'])
 df = df.rename(index=lambda x: x + 1)
-filename = f"data/{pais}_next.csv"
+filename = f"data/{pais}-{liga}_next.csv"
 df.to_csv(filename, sep=";", index=False)
