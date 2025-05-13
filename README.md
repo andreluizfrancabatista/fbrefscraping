@@ -1,6 +1,4 @@
-![Desempenho de acertos](desempenho.png)
-
-### 📊 Desempenho de Acertos por Liga e País
+### 📊 Desempenho de Acertos por Liga e País (Season 2024/2025)
 
 | 🌍 País             | 🏆 Liga              | 🏠 Casa (H)   | 🚗 Fora (A)   | 📈 Total     |
 |---------------------|----------------------|----------------|----------------|----------------|
