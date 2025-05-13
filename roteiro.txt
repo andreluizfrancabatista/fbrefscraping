@@ -18,3 +18,7 @@ Tá tudo funcionando bem.
 - Fazer para outras temporadas
 - Fazer para as segundas divisões de cada países
 - Fazer para ligas europeias menores (Holanda, Bélgica, Portugal, Austria, Escócia, Turquia, etc)
+
+Problemas para consertar.
+A liga 2 da França e da Inglaterra, já terminaram. Está ocorrendo um erro no index.py por causa disso, e está gerando .csv vazios. 
+Tem que consertar.

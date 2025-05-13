@@ -13,8 +13,18 @@ if len(sys.argv) > 1:
     link = sys.argv[3]
 
 # Carregar os CSVs
-df_matches = pd.read_csv(f'data/{pais}-{liga}.csv', sep=';')
-df_scores = pd.read_csv(f'data/{pais}-{liga}_scores.csv', sep=';', index_col=0)
+caminho_arquivo = f'data/{pais}-{liga}.csv'
+if not os.path.exists(caminho_arquivo):
+    print(f'Arquivo não encontrado: {caminho_arquivo}')
+    sys.exit(1)  # encerra o script com código de erro 1
+df_matches = pd.read_csv(caminho_arquivo, sep=';')
+
+caminho_arquivo = f'data/{pais}-{liga}_scores.csv'
+if not os.path.exists(caminho_arquivo):
+    print(f'Arquivo não encontrado: {caminho_arquivo}')
+    sys.exit(1)  # encerra o script com código de erro 1
+
+df_scores = pd.read_csv(caminho_arquivo, sep=';', index_col=0)
 
 # Garantir que as colunas de week no df_scores sejam strings no formato correto (ex: 'WEEK2', 'WEEK3'...)
 df_scores.columns = [f'WEEK{int(col.replace("WEEK", ""))}' for col in df_scores.columns]

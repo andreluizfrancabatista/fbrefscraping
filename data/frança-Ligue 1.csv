@@ -238,7 +238,61 @@ WEEK;DATE;HOME;AWAY;FTHG;FTAG;DIFF
 27;29/03/2025;Saint-Étienne;Paris S-G;1;6;-5
 27;29/03/2025;Monaco;Nice;2;1;1
 27;30/03/2025;Toulouse;Brest;2;4;-2
-27;30/03/2025;Angers;Rennes;0;3;-3
 27;30/03/2025;Le Havre;Nantes;3;2;1
 27;30/03/2025;Auxerre;Montpellier;1;0;1
+27;30/03/2025;Angers;Rennes;0;3;-3
 27;30/03/2025;Lille;Lens;1;0;1
+28;04/04/2025;Nice;Nantes;1;2;-1
+28;05/04/2025;Paris S-G;Angers;1;0;1
+28;05/04/2025;Brest;Monaco;2;1;1
+28;05/04/2025;Lyon;Lille;2;1;1
+28;06/04/2025;Lens;Saint-Étienne;1;0;1
+28;06/04/2025;Rennes;Auxerre;0;1;-1
+28;06/04/2025;Reims;Strasbourg;0;1;-1
+28;06/04/2025;Montpellier;Le Havre;0;2;-2
+28;06/04/2025;Marseille;Toulouse;3;2;1
+29;11/04/2025;Lens;Reims;0;2;-2
+29;12/04/2025;Monaco;Marseille;3;0;3
+29;12/04/2025;Toulouse;Lille;1;2;-1
+29;12/04/2025;Strasbourg;Nice;2;2;0
+29;13/04/2025;Saint-Étienne;Brest;3;3;0
+29;13/04/2025;Angers;Montpellier;2;0;2
+29;13/04/2025;Le Havre;Rennes;1;5;-4
+29;13/04/2025;Auxerre;Lyon;1;3;-2
+30;18/04/2025;Rennes;Nantes;2;1;1
+30;19/04/2025;Paris S-G;Le Havre;2;1;1
+30;19/04/2025;Monaco;Strasbourg;0;0;0
+30;19/04/2025;Marseille;Montpellier;5;1;4
+30;20/04/2025;Lille;Auxerre;3;1;2
+30;20/04/2025;Nice;Angers;2;1;1
+30;20/04/2025;Reims;Toulouse;1;0;1
+30;20/04/2025;Brest;Lens;1;3;-2
+30;20/04/2025;Saint-Étienne;Lyon;2;1;1
+29;22/04/2025;Nantes;Paris S-G;1;1;0
+31;25/04/2025;Paris S-G;Nice;1;3;-2
+31;26/04/2025;Strasbourg;Saint-Étienne;3;1;2
+31;26/04/2025;Le Havre;Monaco;1;1;0
+31;26/04/2025;Lyon;Rennes;4;1;3
+31;27/04/2025;Angers;Lille;0;2;-2
+31;27/04/2025;Montpellier;Reims;0;0;0
+31;27/04/2025;Nantes;Toulouse;0;0;0
+31;27/04/2025;Lens;Auxerre;0;4;-4
+31;27/04/2025;Marseille;Brest;4;1;3
+32;02/05/2025;Nice;Reims;1;0;1
+32;03/05/2025;Strasbourg;Paris S-G;2;1;1
+32;03/05/2025;Toulouse;Rennes;2;1;1
+32;03/05/2025;Saint-Étienne;Monaco;1;3;-2
+32;04/05/2025;Nantes;Angers;0;1;-1
+32;04/05/2025;Auxerre;Le Havre;1;2;-1
+32;04/05/2025;Brest;Montpellier;1;0;1
+32;04/05/2025;Lyon;Lens;1;2;-1
+32;04/05/2025;Lille;Marseille;1;1;0
+33;10/05/2025;Brest;Lille;2;0;2
+33;10/05/2025;Monaco;Lyon;2;0;2
+33;10/05/2025;Auxerre;Nantes;1;1;0
+33;10/05/2025;Angers;Strasbourg;2;1;1
+33;10/05/2025;Montpellier;Paris S-G;1;4;-3
+33;10/05/2025;Rennes;Nice;2;0;2
+33;10/05/2025;Reims;Saint-Étienne;0;2;-2
+33;10/05/2025;Le Havre;Marseille;1;3;-2
+33;10/05/2025;Toulouse;Lens;1;1;0

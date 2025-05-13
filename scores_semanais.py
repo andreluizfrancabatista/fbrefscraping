@@ -46,6 +46,9 @@ if __name__ == "__main__":
         liga = sys.argv[2]
         link = sys.argv[3]
     file_path = f'data/{pais}-{liga}.csv'
-    df_weekly_scores = compute_weekly_scores(file_path)
-    df_weekly_scores.to_csv(f'data/{pais}-{liga}_scores.csv', sep=';', index=True)
+    try:
+        df_weekly_scores = compute_weekly_scores(file_path)
+        df_weekly_scores.to_csv(f'data/{pais}-{liga}_scores.csv', sep=';', index=True)
+    except Exception as error:
+        print(f'{error}, {pais}, {liga}')
 

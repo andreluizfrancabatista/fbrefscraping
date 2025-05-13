@@ -467,3 +467,90 @@ WEEK;DATE;HOME;AWAY;FTHG;FTAG;DIFF
 39;29/03/2025;Middlesbrough;Oxford United;2;1;1
 39;29/03/2025;Stoke City;QPR;3;1;2
 39;02/04/2025;Derby County;Preston;2;0;2
+40;04/04/2025;Blackburn;Middlesbrough;0;2;-2
+40;05/04/2025;Luton Town;Leeds United;1;1;0
+40;05/04/2025;West Brom;Sunderland;0;1;-1
+40;05/04/2025;Coventry City;Burnley;1;2;-1
+40;05/04/2025;QPR;Cardiff City;0;0;0
+40;05/04/2025;Preston;Stoke City;1;1;0
+40;05/04/2025;Bristol City;Watford;2;1;1
+40;05/04/2025;Swansea City;Derby County;1;0;1
+40;05/04/2025;Plymouth Argyle;Norwich City;2;1;1
+40;05/04/2025;Millwall;Portsmouth;2;1;1
+40;05/04/2025;Sheffield Weds;Hull City;0;1;-1
+40;05/04/2025;Oxford United;Sheffield Utd;1;0;1
+41;08/04/2025;Watford;Hull City;1;0;1
+41;08/04/2025;Norwich City;Sunderland;0;0;0
+41;08/04/2025;Preston;Cardiff City;2;2;0
+41;08/04/2025;Blackburn;Sheffield Weds;2;2;0
+41;08/04/2025;Derby County;Burnley;0;0;0
+41;08/04/2025;Stoke City;Luton Town;1;1;0
+41;08/04/2025;Bristol City;West Brom;2;1;1
+41;08/04/2025;Sheffield Utd;Millwall;0;1;-1
+41;08/04/2025;Middlesbrough;Leeds United;0;1;-1
+41;09/04/2025;Swansea City;Plymouth Argyle;3;0;3
+41;09/04/2025;Oxford United;QPR;1;3;-2
+41;09/04/2025;Coventry City;Portsmouth;1;0;1
+42;11/04/2025;Burnley;Norwich City;2;1;1
+42;12/04/2025;Leeds United;Preston;2;1;1
+42;12/04/2025;Plymouth Argyle;Sheffield Utd;2;1;1
+42;12/04/2025;Sheffield Weds;Oxford United;0;1;-1
+42;12/04/2025;Portsmouth;Derby County;2;2;0
+42;12/04/2025;QPR;Bristol City;1;1;0
+42;12/04/2025;West Brom;Watford;2;1;1
+42;12/04/2025;Luton Town;Blackburn;0;1;-1
+42;12/04/2025;Cardiff City;Stoke City;0;1;-1
+42;12/04/2025;Sunderland;Swansea City;0;1;-1
+42;12/04/2025;Millwall;Middlesbrough;1;0;1
+42;14/04/2025;Hull City;Coventry City;1;1;0
+43;18/04/2025;Derby County;Luton Town;0;1;-1
+43;18/04/2025;Bristol City;Sunderland;2;1;1
+43;18/04/2025;Preston;QPR;1;2;-1
+43;18/04/2025;Swansea City;Hull City;1;0;1
+43;18/04/2025;Coventry City;West Brom;2;0;2
+43;18/04/2025;Blackburn;Millwall;4;1;3
+43;18/04/2025;Middlesbrough;Plymouth Argyle;2;1;1
+43;18/04/2025;Norwich City;Portsmouth;3;5;-2
+43;18/04/2025;Watford;Burnley;1;2;-1
+43;18/04/2025;Stoke City;Sheffield Weds;2;0;2
+43;18/04/2025;Sheffield Utd;Cardiff City;2;0;2
+43;18/04/2025;Oxford United;Leeds United;0;1;-1
+44;21/04/2025;Sheffield Weds;Middlesbrough;2;1;1
+44;21/04/2025;West Brom;Derby County;1;3;-2
+44;21/04/2025;QPR;Swansea City;1;2;-1
+44;21/04/2025;Leeds United;Stoke City;6;0;6
+44;21/04/2025;Cardiff City;Oxford United;1;1;0
+44;21/04/2025;Portsmouth;Watford;1;0;1
+44;21/04/2025;Plymouth Argyle;Coventry City;3;1;2
+44;21/04/2025;Millwall;Norwich City;3;1;2
+44;21/04/2025;Luton Town;Bristol City;3;1;2
+44;21/04/2025;Hull City;Preston;2;1;1
+44;21/04/2025;Sunderland;Blackburn;0;1;-1
+44;21/04/2025;Burnley;Sheffield Utd;2;1;1
+45;25/04/2025;Stoke City;Sheffield Utd;0;2;-2
+45;26/04/2025;QPR;Burnley;0;5;-5
+45;26/04/2025;Luton Town;Coventry City;1;0;1
+45;26/04/2025;Sheffield Weds;Portsmouth;1;1;0
+45;26/04/2025;Preston;Plymouth Argyle;1;2;-1
+45;26/04/2025;Millwall;Swansea City;1;0;1
+45;26/04/2025;Oxford United;Sunderland;2;0;2
+45;26/04/2025;Middlesbrough;Norwich City;0;0;0
+45;26/04/2025;Cardiff City;West Brom;0;0;0
+45;26/04/2025;Blackburn;Watford;2;1;1
+45;26/04/2025;Hull City;Derby County;0;1;-1
+45;28/04/2025;Leeds United;Bristol City;4;0;4
+46;03/05/2025;Sunderland;QPR;0;1;-1
+46;03/05/2025;Norwich City;Cardiff City;4;2;2
+46;03/05/2025;West Brom;Luton Town;5;3;2
+46;03/05/2025;Coventry City;Middlesbrough;2;0;2
+46;03/05/2025;Burnley;Millwall;3;1;2
+46;03/05/2025;Portsmouth;Hull City;1;1;0
+46;03/05/2025;Bristol City;Preston;2;2;0
+46;03/05/2025;Derby County;Stoke City;0;0;0
+46;03/05/2025;Watford;Sheffield Weds;1;1;0
+46;03/05/2025;Sheffield Utd;Blackburn;1;1;0
+46;03/05/2025;Plymouth Argyle;Leeds United;1;2;-1
+46;03/05/2025;Swansea City;Oxford United;3;3;0
+;08/05/2025;Bristol City;Sheffield Utd;0;3;-3
+;09/05/2025;Coventry City;Sunderland;1;2;-1
+;12/05/2025;Sheffield Utd;Bristol City;3;0;3
