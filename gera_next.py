@@ -43,11 +43,11 @@ time.sleep(2)
 
 # next dict
 next = {
-    'DIV':[],
-    'DATE':[],
-    'TIME':[],
-    'HOME':[],
-    'AWAY':[]
+    'Div':[],
+    'Date':[],
+    'Time':[],
+    'HomeTeam':[],
+    'AwayTeam':[]
 }
 
 # Coleta de dados
@@ -63,11 +63,11 @@ for row in rows:
                 date  = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="date"]').get_attribute('csk')
                 # start = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="start_time"]').get_attribute('csk')
                 start = row.find_element(By.CSS_SELECTOR, 'td[ data-stat="start_time"] span.localtime').text.strip("()")
-                next['DIV'].append(liga)
-                next['DATE'].append(date)
-                next['TIME'].append(start)
-                next['HOME'].append(home)
-                next['AWAY'].append(away)
+                next['Div'].append(liga)
+                next['Date'].append(date)
+                next['Time'].append(start)
+                next['HomeTeam'].append(home)
+                next['AwayTeam'].append(away)
                 print(f'{liga} {date} {start} {home} x {away}')
     except Exception as error:
         # print(f'Erro: {error}')
@@ -75,30 +75,23 @@ for row in rows:
 
 # # Salvar no CSV
 df = pd.DataFrame(next)
-df['DATE'] = pd.to_datetime(df['DATE'], format='%Y%m%d')
-df['DATETIME'] = pd.to_datetime(df['DATE'].dt.strftime('%Y-%m-%d') + ' ' + df['TIME'])
+df['Date'] = pd.to_datetime(df['Date'], format='%Y%m%d')
+df['DATETIME'] = pd.to_datetime(df['Date'].dt.strftime('%Y-%m-%d') + ' ' + df['Time'])
 filename = "data/all_next.csv"
 
 if os.path.exists(filename):
     df_antigo = pd.read_csv(filename, sep=";")
-    df_antigo['DATETIME'] = pd.to_datetime(df_antigo['DATE'] + ' ' + df_antigo['TIME'], format='%d/%m/%Y %H:%M')
+    df_antigo['DATETIME'] = pd.to_datetime(df_antigo['Date'] + ' ' + df_antigo['Time'], format='%d/%m/%Y %H:%M')
     df_total = pd.concat([df_antigo, df], ignore_index=True)
     df_total.drop_duplicates(keep='last', inplace=True)
 else:
     df_total = df
 
 df_total = df_total.sort_values(by='DATETIME')
-df_total['DATE'] = df_total['DATETIME'].dt.strftime('%d/%m/%Y')
-df_total['TIME'] = df_total['DATETIME'].dt.strftime('%H:%M')
+df_total['Date'] = df_total['DATETIME'].dt.strftime('%d/%m/%Y')
+df_total['Time'] = df_total['DATETIME'].dt.strftime('%H:%M')
 df_total = df_total.drop(columns=['DATETIME'])
 df_total.reset_index(drop=True, inplace=True)
 df_total.index = df_total.index.set_names(['Nº'])
 df_total = df_total.rename(index=lambda x: x + 1)
-df_total.rename(columns={
-    'DIV': 'Div',
-    'DATE': 'Date',
-    'TIME': 'Time',
-    'HOME': 'HomeTeam',
-    'AWAY': 'AwayTeam'
-}, inplace=True)
 df_total.to_csv(filename, sep=";", index=False)

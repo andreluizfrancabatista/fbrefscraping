@@ -6,6 +6,7 @@ arquivo = "data/all_next.csv"
 
 # Verifica se o arquivo existe antes de deletar
 if os.path.exists(arquivo):
+    print(f'{arquivo} encontrado!')
     os.remove(arquivo)
     print(f"{arquivo} deletado com sucesso!")
 else:
@@ -14,7 +15,10 @@ else:
 dataset = {
     "inglaterra" : {
         "E0" : "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
-        "E1" : "https://fbref.com/en/comps/10/schedule/Championship-Scores-and-Fixtures"
+        "E1" : "https://fbref.com/en/comps/10/schedule/Championship-Scores-and-Fixtures",
+        "E2" : "https://fbref.com/en/comps/15/schedule/League-One-Scores-and-Fixtures",
+        "E3" : "https://fbref.com/en/comps/16/schedule/League-Two-Scores-and-Fixtures",
+        "EC" : "https://fbref.com/en/comps/34/schedule/National-League-Scores-and-Fixtures"
     },
     "espanha" : {
         "SP1" : "https://fbref.com/en/comps/12/schedule/La-Liga-Scores-and-Fixtures",
@@ -31,7 +35,26 @@ dataset = {
     "frança" : {
         "F1" : "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures",
         "F2" : "https://fbref.com/en/comps/60/schedule/Ligue-2-Scores-and-Fixtures"
-    }
+    },
+    "bélgica" : {
+      "B1" : "https://fbref.com/en/comps/37/schedule/Belgian-Pro-League-Scores-and-Fixtures"
+   },
+   "grécia" : {
+      "G1" : "https://fbref.com/en/comps/27/schedule/Super-League-Greece-Scores-and-Fixtures"
+   },
+   "holanda" : {
+      "N1" : "https://fbref.com/en/comps/23/schedule/Eredivisie-Scores-and-Fixtures"
+   },
+   "portugal" : {
+      "P1" : "https://fbref.com/en/comps/32/schedule/Primeira-Liga-Scores-and-Fixtures"
+   },
+   "escócia" : {
+      "SC0" : "https://fbref.com/en/comps/40/schedule/Scottish-Premiership-Scores-and-Fixtures",
+      "SC1" : "https://fbref.com/en/comps/72/schedule/Scottish-Championship-Scores-and-Fixtures"
+   },
+   "turquia" : {
+      "T1" : "https://fbref.com/en/comps/26/schedule/Super-Lig-Scores-and-Fixtures"
+   }
 }
 
 scripts = ["gera_next.py"]
