@@ -42,9 +42,6 @@ dataset = {
    "grécia" : {
       "G1" : "https://fbref.com/en/comps/27/schedule/Super-League-Greece-Scores-and-Fixtures"
    },
-   "holanda" : {
-      "N1" : "https://fbref.com/en/comps/23/schedule/Eredivisie-Scores-and-Fixtures"
-   },
    "portugal" : {
       "P1" : "https://fbref.com/en/comps/32/schedule/Primeira-Liga-Scores-and-Fixtures"
    },

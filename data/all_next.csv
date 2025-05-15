@@ -7,7 +7,6 @@ SP1;15/05/2025;16:30;Getafe;Athletic Club
 SP1;15/05/2025;16:30;Espanyol;Barcelona
 P1;16/05/2025;15:00;Rio Ave;Gil Vicente FC
 P1;16/05/2025;15:00;Famalicão;Casa Pia
-N1;16/05/2025;15:00;Cambuur;Den Bosch
 E0;16/05/2025;15:30;Aston Villa;Tottenham
 SP2;16/05/2025;15:30;Levante;Albacete
 SC1;16/05/2025;15:45;Livingston;Partick Thistle
@@ -29,7 +28,6 @@ D1;17/05/2025;10:30;Heidenheim;Werder Bremen
 D1;17/05/2025;10:30;Mainz 05;Leverkusen
 SP2;17/05/2025;11:15;La Coruña;Granada
 SP2;17/05/2025;11:15;Eibar;Burgos
-N1;17/05/2025;11:30;ADO Den Haag;Telstar
 T1;17/05/2025;13:00;Adana Demirspor;Hatayspor
 B1;17/05/2025;13:15;Standard Liège;Dender
 SP2;17/05/2025;13:30;Cartagena;Tenerife
@@ -41,7 +39,6 @@ P1;17/05/2025;14:00;Braga;Benfica
 P1;17/05/2025;14:00;Sporting CP;Vitória
 P1;17/05/2025;14:00;AVS Futebol;Moreirense
 P1;17/05/2025;14:00;Arouca;Boavista
-N1;17/05/2025;15:00;Dordrecht;De Graafschap
 B1;17/05/2025;15:45;Antwerp;Union SG
 SP2;17/05/2025;16:00;Málaga;Sporting Gijón
 F1;17/05/2025;16:00;Lyon;Angers
@@ -56,15 +53,6 @@ F1;17/05/2025;16:00;Saint-Étienne;Toulouse
 E0;18/05/2025;08:00;Everton;Southampton
 B1;18/05/2025;08:30;Anderlecht;Club Brugge
 SP2;18/05/2025;09:00;Racing Ferrol;Cádiz
-N1;18/05/2025;09:30;Ajax;Twente
-N1;18/05/2025;09:30;NAC Breda;Willem II
-N1;18/05/2025;09:30;Heerenveen;Feyenoord
-N1;18/05/2025;09:30;RKC Waalwijk;Go Ahead Eag
-N1;18/05/2025;09:30;Zwolle;Groningen
-N1;18/05/2025;09:30;AZ Alkmaar;Almere City
-N1;18/05/2025;09:30;Heracles Almelo;NEC Nijmegen
-N1;18/05/2025;09:30;Sparta R'dam;PSV Eindhoven
-N1;18/05/2025;09:30;Fortuna Sittard;Utrecht
 I1;18/05/2025;10:00;Juventus;Udinese
 I1;18/05/2025;10:00;Cagliari;Venezia
 I1;18/05/2025;10:00;Roma;Milan
