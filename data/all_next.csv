@@ -1,0 +1,93 @@
+Div;Date;Time;HomeTeam;AwayTeam
+SP1;15/05/2025;14:00;Rayo Vallecano;Betis
+SP1;15/05/2025;14:00;Osasuna;Atlético Madrid
+SP1;15/05/2025;16:30;Getafe;Athletic Club
+SP1;15/05/2025;16:30;Espanyol;Barcelona
+SP2;16/05/2025;15:30;Levante;Albacete
+E0;16/05/2025;15:30;Aston Villa;Tottenham
+E0;16/05/2025;16:15;Chelsea;Manchester Utd
+D1;17/05/2025;10:30;St. Pauli;Bochum
+D1;17/05/2025;10:30;Mainz 05;Leverkusen
+D1;17/05/2025;10:30;Hoffenheim;Bayern Munich
+D1;17/05/2025;10:30;Augsburg;Union Berlin
+D1;17/05/2025;10:30;Freiburg;Eint Frankfurt
+D1;17/05/2025;10:30;Heidenheim;Werder Bremen
+D1;17/05/2025;10:30;Gladbach;Wolfsburg
+D1;17/05/2025;10:30;Dortmund;Holstein Kiel
+D1;17/05/2025;10:30;RB Leipzig;Stuttgart
+SP2;17/05/2025;11:15;Eibar;Burgos
+SP2;17/05/2025;11:15;La Coruña;Granada
+SP2;17/05/2025;13:30;Cartagena;Tenerife
+SP2;17/05/2025;13:30;Huesca;Elche
+F1;17/05/2025;16:00;Paris S-G;Auxerre
+SP2;17/05/2025;16:00;Málaga;Sporting Gijón
+F1;17/05/2025;16:00;Lille;Reims
+F1;17/05/2025;16:00;Nice;Brest
+F1;17/05/2025;16:00;Lyon;Angers
+F1;17/05/2025;16:00;Lens;Monaco
+F1;17/05/2025;16:00;Marseille;Rennes
+F1;17/05/2025;16:00;Nantes;Montpellier
+F1;17/05/2025;16:00;Saint-Étienne;Toulouse
+F1;17/05/2025;16:00;Strasbourg;Le Havre
+E0;18/05/2025;08:00;Everton;Southampton
+SP2;18/05/2025;09:00;Racing Ferrol;Cádiz
+I1;18/05/2025;10:00;Inter;Lazio
+I1;18/05/2025;10:00;Juventus;Udinese
+I1;18/05/2025;10:00;Roma;Milan
+I1;18/05/2025;10:00;Hellas Verona;Como
+I1;18/05/2025;10:00;Lecce;Torino
+I1;18/05/2025;10:00;Cagliari;Venezia
+I1;18/05/2025;10:00;Monza;Empoli
+I1;18/05/2025;10:00;Parma;Napoli
+I1;18/05/2025;10:00;Genoa;Atalanta
+I1;18/05/2025;10:00;Fiorentina;Bologna
+E0;18/05/2025;10:15;West Ham;Nott'ham Forest
+D2;18/05/2025;10:30;Ulm;Preußen Münster
+D2;18/05/2025;10:30;Schalke 04;Elversberg
+D2;18/05/2025;10:30;Hertha BSC;Hannover 96
+D2;18/05/2025;10:30;Köln;Kaiserslautern
+D2;18/05/2025;10:30;Greuther Fürth;Hamburger SV
+D2;18/05/2025;10:30;Magdeburg;Düsseldorf
+D2;18/05/2025;10:30;BTSV;Nürnberg
+D2;18/05/2025;10:30;Darmstadt 98;Jahn R'burg
+D2;18/05/2025;10:30;Karlsruher;Paderborn 07
+E0;18/05/2025;11:00;Brentford;Fulham
+E0;18/05/2025;11:00;Leicester City;Ipswich Town
+SP2;18/05/2025;11:15;Oviedo;Zaragoza
+SP2;18/05/2025;11:15;Castellón;Eldense
+E0;18/05/2025;12:30;Arsenal;Newcastle Utd
+SP1;18/05/2025;14:00;Real Sociedad;Girona
+SP1;18/05/2025;14:00;Atlético Madrid;Betis
+SP1;18/05/2025;14:00;Mallorca;Getafe
+SP1;18/05/2025;14:00;Valladolid;Alavés
+SP1;18/05/2025;14:00;Valencia;Athletic Club
+SP1;18/05/2025;14:00;Barcelona;Villarreal
+SP1;18/05/2025;14:00;Osasuna;Espanyol
+SP1;18/05/2025;14:00;Sevilla;Real Madrid
+SP1;18/05/2025;14:00;Celta Vigo;Rayo Vallecano
+SP1;18/05/2025;14:00;Las Palmas;Leganés
+SP2;18/05/2025;16:00;Almería;Racing Sant
+SP2;19/05/2025;15:30;Córdoba;CD Mirandés
+E0;19/05/2025;16:00;Brighton;Liverpool
+E0;20/05/2025;16:00;Crystal Palace;Wolves
+E0;20/05/2025;16:00;Manchester City;Bournemouth
+I1;25/05/2025;10:00;Torino;Roma
+I1;25/05/2025;10:00;Atalanta;Parma
+I1;25/05/2025;10:00;Venezia;Juventus
+I1;25/05/2025;10:00;Napoli;Cagliari
+I1;25/05/2025;10:00;Como;Inter
+I1;25/05/2025;10:00;Udinese;Fiorentina
+I1;25/05/2025;10:00;Lazio;Lecce
+I1;25/05/2025;10:00;Bologna;Genoa
+I1;25/05/2025;10:00;Empoli;Hellas Verona
+I1;25/05/2025;10:00;Milan;Monza
+E0;25/05/2025;12:00;Ipswich Town;West Ham
+E0;25/05/2025;12:00;Southampton;Arsenal
+E0;25/05/2025;12:00;Fulham;Manchester City
+E0;25/05/2025;12:00;Wolves;Brentford
+E0;25/05/2025;12:00;Manchester Utd;Aston Villa
+E0;25/05/2025;12:00;Bournemouth;Leicester City
+E0;25/05/2025;12:00;Liverpool;Crystal Palace
+E0;25/05/2025;12:00;Nott'ham Forest;Chelsea
+E0;25/05/2025;12:00;Tottenham;Brighton
+E0;25/05/2025;12:00;Newcastle Utd;Everton

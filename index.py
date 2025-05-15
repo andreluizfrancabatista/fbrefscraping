@@ -1,20 +1,12 @@
 """# Importando as Bibliotecas"""
 import pandas as pd
 import time
-from tqdm import tqdm
-from datetime import datetime, timedelta
-import pytz
-import re
 import sys
-import os
-import numpy as np
 
 """# Configuração do Web-Driver"""
 # Utilizando o WebDriver do Selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 

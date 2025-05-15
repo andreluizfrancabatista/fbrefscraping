@@ -22,3 +22,5 @@ Tá tudo funcionando bem.
 Problemas para consertar.
 A liga 2 da França e da Inglaterra, já terminaram. Está ocorrendo um erro no index.py por causa disso, e está gerando .csv vazios. 
 Tem que consertar.
+
+Criado um script para gerar um arquivo all_next.csv para todos os próximos jogos.
