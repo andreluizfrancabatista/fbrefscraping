@@ -75,7 +75,7 @@ df_matches.to_csv(f'data/{pais}-{liga}_final.csv', sep=';', index=False)
 # Contar os acertos
 #####
 # # Gerar relatório
-# Cálculo dos totais
+# Cálculo dos totais com filtro de >= 1.5
 total_jogos = len(df_matches)
 total_diff_ftr_h = len(df_matches[df_matches['DIFF_FTR'] == 'H'])
 total_diff_ftr_a = len(df_matches[df_matches['DIFF_FTR'] == 'A'])
@@ -111,4 +111,4 @@ else:
     df_resultado.to_csv(output_file, sep=';', index=False, decimal=',')  # Cria o arquivo com cabeçalho
 
 # print(f"Dados de {pais} adicionados ao CSV consolidado.")
-print(f'{pais:<13} {liga:<17} H: {round(porcentagem_acertos_h*100, 2):<5}%. A: {round(porcentagem_acertos_a*100, 2):<5}%. Total: {round(porcentagem_acertos_total*100, 2):<5}%')
+print(f'{pais:<13} {liga:<17} H: {round(porcentagem_acertos_h*100, 2):<5}% ({total_diff_ftr_h}). A: {round(porcentagem_acertos_a*100, 2):<5}%({total_diff_ftr_a}). Total: {round(porcentagem_acertos_total*100, 2):<5}% ({total_diff_ftr_h + total_diff_ftr_a}).')

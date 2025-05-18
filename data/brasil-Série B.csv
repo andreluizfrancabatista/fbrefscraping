@@ -1,0 +1,73 @@
+WEEK;DATE;HOME;AWAY;FTHG;FTAG;DIFF
+1;04/04/2025;Goiás;Amazonas;1;0;1
+1;05/04/2025;CRB;Chapecoense;1;0;1
+1;05/04/2025;Coritiba;Vila Nova;1;0;1
+1;05/04/2025;América (MG);Botafogo (SP);1;0;1
+1;04/04/2025;Criciúma;Operário;1;2;-1
+1;04/04/2025;Paysandu;Ath Paranaense;1;2;-1
+1;06/04/2025;Ferroviária;Remo;1;1;0
+1;06/04/2025;Volta Redonda;Cuiabá;0;1;-1
+1;06/04/2025;Avaí;Novorizontino;1;1;0
+1;07/04/2025;Atl Goianiense;Athletic;4;2;2
+2;10/04/2025;Ath Paranaense;Criciúma;2;1;1
+2;10/04/2025;Cuiabá;Avaí;2;2;0
+2;12/04/2025;Chapecoense;Coritiba;1;2;-1
+2;12/04/2025;Vila Nova;Paysandu;1;0;1
+2;12/04/2025;Amazonas;Ferroviária;0;0;0
+2;12/04/2025;Novorizontino;Volta Redonda;1;0;1
+2;12/04/2025;Operário;Goiás;1;2;-1
+2;13/04/2025;Remo;América (MG);2;0;2
+2;13/04/2025;Athletic;CRB;1;2;-1
+2;13/04/2025;Botafogo (SP);Atl Goianiense;1;1;0
+3;15/04/2025;Cuiabá;Ath Paranaense;2;1;1
+3;16/04/2025;Paysandu;Chapecoense;0;2;-2
+3;16/04/2025;Avaí;Operário;1;0;1
+3;17/04/2025;Goiás;Vila Nova;2;2;0
+3;17/04/2025;Botafogo (SP);Remo;2;2;0
+3;17/04/2025;Criciúma;Athletic;4;0;4
+3;17/04/2025;CRB;Volta Redonda;1;0;1
+3;16/04/2025;Coritiba;Novorizontino;0;0;0
+3;17/04/2025;Ferroviária;Atl Goianiense;2;0;2
+3;17/04/2025;América (MG);Amazonas;3;1;2
+4;19/04/2025;Operário;Paysandu;0;0;0
+4;20/04/2025;Vila Nova;Botafogo (SP);2;0;2
+4;20/04/2025;Chapecoense;Athletic;1;0;1
+4;20/04/2025;Ath Paranaense;CRB;2;0;2
+4;20/04/2025;América (MG);Goiás;1;0;1
+4;21/04/2025;Amazonas;Avaí;0;2;-2
+4;21/04/2025;Novorizontino;Criciúma;1;1;0
+4;22/04/2025;Atl Goianiense;Cuiabá;1;1;0
+4;22/04/2025;Volta Redonda;Ferroviária;0;0;0
+4;21/04/2025;Remo;Coritiba;1;0;1
+5;25/04/2025;Criciúma;Remo;1;1;0
+5;24/04/2025;Novorizontino;Ath Paranaense;2;1;1
+5;26/04/2025;Coritiba;Operário;2;0;2
+5;26/04/2025;Avaí;América (MG);3;0;3
+5;25/04/2025;Vila Nova;Chapecoense;1;0;1
+5;27/04/2025;Amazonas;Atl Goianiense;1;1;0
+5;27/04/2025;Athletic;Volta Redonda;2;1;1
+5;27/04/2025;Paysandu;CRB;1;1;0
+5;27/04/2025;Cuiabá;Ferroviária;1;0;1
+5;28/04/2025;Botafogo (SP);Goiás;0;1;-1
+6;03/05/2025;Remo;Amazonas;1;0;1
+6;03/05/2025;Volta Redonda;Paysandu;1;0;1
+6;02/05/2025;Ferroviária;Coritiba;2;1;1
+6;04/05/2025;Atl Goianiense;Novorizontino;1;0;1
+6;04/05/2025;Ath Paranaense;Botafogo (SP);1;4;-3
+6;04/05/2025;Chapecoense;Criciúma;2;1;1
+6;04/05/2025;Operário;América (MG);1;0;1
+6;05/05/2025;Goiás;Avaí;2;1;1
+6;06/05/2025;CRB;Cuiabá;1;1;0
+6;06/05/2025;Athletic;Vila Nova;0;1;-1
+7;08/05/2025;Ath Paranaense;Chapecoense;1;1;0
+7;10/05/2025;Avaí;Atl Goianiense;0;0;0
+7;10/05/2025;Goiás;Coritiba;1;0;1
+7;11/05/2025;Criciúma;Volta Redonda;0;0;0
+7;11/05/2025;Cuiabá;Operário;2;3;-1
+7;11/05/2025;Novorizontino;Ferroviária;2;2;0
+7;12/05/2025;Botafogo (SP);Athletic;0;3;-3
+7;12/05/2025;Amazonas;CRB;1;1;0
+7;14/05/2025;Remo;Vila Nova;2;0;2
+7;14/05/2025;América (MG);Paysandu;2;2;0
+8;16/05/2025;Chapecoense;Cuiabá;2;1;1
+8;15/05/2025;Ferroviária;Avaí;1;1;0

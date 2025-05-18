@@ -1,4 +1,3 @@
-import sys
 import os
 import subprocess
 
@@ -27,6 +26,7 @@ dataset = {
 
 scripts = ["index.py", "scores_semanais.py", "backtesting.py"]
 scripts = ["scores_semanais.py", "backtesting.py"]
+scripts = ['backtesting.py']
 
 for script in scripts:
   for pais, obj in dataset.items():

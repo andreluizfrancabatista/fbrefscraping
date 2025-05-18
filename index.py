@@ -88,7 +88,7 @@ for row in rows:
             dados['DIFF'].append(diff)
             # print(f'{home} {fthg} x {ftag} {away}')
     except Exception as error:
-        print(f'Erro: {error}')
+        # print(f'Erro: {error}')
         pass
 
 # # Salvar no CSV
