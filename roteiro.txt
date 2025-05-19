@@ -26,3 +26,7 @@ Tem que consertar.
 code_2.py
 Criado um script para gerar um arquivo all_next.csv para todos os próximos jogos.
 Adicionadas outras ligas# B-Bélgica, D-Alemanha, E-Inglaterra, F-França, G-Grécia, I-Itália, N-Holanda, P-Portugal, SC-Escócia, SP-Espanha, T-Turquia
+
+code_3.py
+Criado um script para os países da América do Sul.
+ADICIONAR O HORÁRIO!!!
